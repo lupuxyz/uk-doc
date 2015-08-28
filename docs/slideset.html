@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Slideset component - UIkit documentation</title>
+        <title>滑块集 - UIkit 中文文档</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
         <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.docs.min.css">
@@ -93,13 +93,13 @@
 
                         <article class="uk-article">
 
-                            <h1>Slideset</h1>
+                            <h1>滑块集/Slideset</h1>
 
-                            <p class="uk-article-lead">Create sets and groups of items, allowing to loop through the sets.</p>
+                            <p class="uk-article-lead">创建条目的组和集合，并允许循环显示。</p>
 
-                            <h2 id="usage"><a href="#usage" class="uk-link-reset">Usage</a></h2>
+                            <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                            <p>To apply this component, add the <code>data-uk-slideset</code> attribute to a container element. Add the <code>default</code> option to the <code>data-uk-slideset</code> attribute, to adjust the number of items within a set.</p>
+                            <p>使用这个组件需要为容器元素添加 <code>data-uk-slideset</code> 属性。添加 <code>default</code> 选项到 <code>data-uk-slideset</code> 属性，调整一个滑块集中条目的个数。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -125,7 +125,7 @@
                             <h3 class="tm-article-subtitle">Markup</h3>
 
 <pre><code>&lt;div data-uk-slideset=&quot;{default: 4}&quot;&gt;
-    &lt;ul class=&quot;uk-grid uk-slideset&quot;&gt;
+    &lt;ul class=&quot;uk-slideset&quot;&gt;
         &lt;li&gt;&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
         &lt;li&gt;&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
         ...
@@ -134,26 +134,26 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="navigations"><a href="#navigations" class="uk-link-reset">Navigations</a></h2>
+                            <h2 id="navigations"><a href="#navigations" class="uk-link-reset">导航/Navigations</a></h2>
 
-                            <p>To navigate through your slides, just use the <code>uk-slideset-nav</code> class. This will dynamically create a navigation depending on the number of existing slides.</p>
+                            <p>为滑块集添加导航，只需使用 <code>uk-slideset-nav</code> 类。它将动态地创建一个基于现有滑块数量的导航。</p>
 
                             <h3 class="tm-article-subtitle">Markup</h3>
 
 <pre><code>&lt;div data-uk-slideset=&quot;{default: 4}&quot;&gt;
-    &lt;ul class=&quot;uk-grid uk-slideset&quot;&gt;
+    &lt;ul class=&quot;uk-slideset&quot;&gt;
         &lt;li&gt;...&lt;/li&gt;
         &lt;li&gt;...&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul class=&quot;uk-slideset-nav&quot;&gt;...&lt;/ul&gt;
 &lt;/div&gt;</code></pre>
 
-                            <p>To switch to the adjacent slides, use the <code>data-uk-slideset-item</code> attribute and set the attribute to <code>next</code> and <code>previous</code>. The elements with the <code>data-uk-slideset-item</code> attribute need to be inside the <code>data-uk-slideset</code> container.</p>
+                            <p>要切换相邻的滑块，使用 <code>data-uk-slideset-item</code> 属性，并设置该属性的值为 <code>next</code> 和 <code>previous</code>。这些带有 <code>data-uk-slideset-item</code> 属性的元素必须放在带有 <code>data-uk-slideset</code> 属性的容器中。</p>
 
                             <h3 class="tm-article-subtitle">Markup</h3>
 
 <pre><code>&lt;div data-uk-slideset=&quot;{default: 4}&quot;&gt;
-    &lt;ul class=&quot;uk-grid uk-slideset&quot;&gt;
+    &lt;ul class=&quot;uk-slideset&quot;&gt;
         &lt;li&gt;...&lt;/li&gt;
         &lt;li&gt;...&lt;/li&gt;
     &lt;/ul&gt;
@@ -163,9 +163,9 @@
 
                             <hr class="uk-article-divider">
 
-                            <h3 id="slide-dot-nav"><a href="#slide-dot-nav" class="uk-link-reset">Slidenav and Dotnav</a></h3>
+                            <h3 id="slide-dot-nav"><a href="#slide-dot-nav" class="uk-link-reset">滑动导航和圆点导航/Slidenav and Dotnav</a></h3>
 
-                            <p>You can use any of the other UIkit components to navigate through a Slideset. For example the <a href="slidenav.html">Slidenav</a> and <a href="dotnav.html">Dotnav</a> can be used to style the slideset navigations as you can see below.</p>
+                            <p>你可以使用 UIkit 的其他任意组件来做滑块集的导航。比如 <a href="slidenav.html">Slidenav</a> 和 <a href="dotnav.html">Dotnav</a> 可以做出像下面例子这样的导航。</p>
 
                             <h4 class="tm-article-subtitle">Example</h4>
 
@@ -193,7 +193,7 @@
 
 <pre><code>&lt;div data-uk-slideset=&quot;{default: 4}&quot;&gt;
     &lt;div class=&quot;uk-slidenav-position&quot;&gt;
-        &lt;ul class=&quot;uk-grid uk-slideset&quot;&gt;
+        &lt;ul class=&quot;uk-slideset&quot;&gt;
             &lt;li&gt;...&lt;/li&gt;
             &lt;li&gt;...&lt;/li&gt;
         &lt;/ul&gt;
@@ -205,9 +205,9 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="responsive"><a href="#responsive" class="uk-link-reset">Responsive items</a></h2>
+                            <h2 id="responsive"><a href="#responsive" class="uk-link-reset">响应式条目/Responsive items</a></h2>
 
-                            <p>The slideset supports media query based items visibility. Just add a breakpoint option, like <code>small</code>, <code>medium</code>, <code>large</code> to the <code>data-uk-slideset</code> attribute. Add the number of items you want to display from the breakpoint upwards.</p>
+                            <p>滑块集支持基于条目可见性的媒体查询。只需添加一个断点选项到 <code>data-uk-slideset</code> 属性中，比如 <code>small</code>, <code>medium</code>, <code>large</code> 。并设置在该断点宽度以上的视口中你想要显示的条目数，如下面例子所示：</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -239,48 +239,48 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="animations"><a href="#animations" class="uk-link-reset">Animations</a></h2>
+                            <h2 id="animations"><a href="#animations" class="uk-link-reset">动画/Animations</a></h2>
 
-                            <p>There is a batch of animations which can be used to display the next set of items. Just add the <code>animation</code> option to the <code>data-uk-slideset</code> and set it to the desired animation. The animation duration can also be adjusted by using the <code>duration</code> option.</p>
+                            <p>这里有那么多的动画可以用在滑块集里，用来显示下一批滑块。只要为 <code>data-uk-slideset</code> 添加 <code>animation</code> 选项并设置你想要的动画。动画的持续时间可以通过设置 <code>duration</code> 选项来修改。</p>
 
                             <div class="uk-overflow-container">
                                 <table class="uk-table uk-text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Animation</th>
-                                            <th>Description</th>
+                                            <th>动画</th>
+                                            <th>描述</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><code>fade</code></td>
-                                            <td>The items fade in and out.</td>
+                                            <td>淡入淡出</td>
                                         </tr>
                                         <tr>
                                             <td><code>scale</code></td>
-                                            <td>The items scale up and down.</td>
+                                            <td>缩放</td>
                                         </tr>
                                         <tr>
                                             <td><code>slide-horizontal</code></td>
-                                            <td>The items slide to the side.</td>
+                                            <td>水平滑入滑出</td>
                                         </tr>
                                         <tr>
                                             <td><code>slide-vertical</code></td>
-                                            <td>The items slide vertically.</td>
+                                            <td>垂直滑入滑出</td>
                                         </tr>
                                         <tr>
                                             <td><code>slide-top</code></td>
-                                            <td>The items slide to and from the top.</td>
+                                            <td>从顶部滑出，从顶部滑入</td>
                                         </tr>
                                         <tr>
                                             <td><code>slide-bottom</code></td>
-                                            <td>The items slide to and from the bottom.</td>
+                                            <td>从底部滑出，从底部滑入</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <h3 class="tm-article-subtitle">Example</h3>
+                            <h3 class="tm-article-subtitle">Example - 在下拉框里选你想要预览的</h3>
 
                             <select id="slideset-animation">
                                 <option value="fade">fade</option>
@@ -318,11 +318,11 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="filter"><a href="#filter" class="uk-link-reset">Filter</a></h2>
+                            <h2 id="filter"><a href="#filter" class="uk-link-reset">过滤/Filter</a></h2>
 
-                            <p>You can also filter your slideset so that only particular items will be displayed. To do so, add the <code>data-uk-filter</code> attribute to each control to define the category you want to filter. Then you also need to add the <code>data-uk-filter</code> attribute to each slideset item to define what category the item belongs to.</p>
+                            <p>你还可以使用过滤来实现只显示滑块集中特定的条目。为此，需要为每个过滤控件添加 <code>data-uk-filter</code> 属性来规定它们过滤的分类。然后还要为每个滑块条目添加 <code>data-uk-filter</code> 属性来规定它们各自属于哪个分类。</p>
 
-                            <p><span class="uk-badge">NOTE</span> The controls can be included in the slideset or referenced by adding the <code>controls</code> option to the <code>data-uk-slideset</code> attribute and passing the id to the option.</p>
+                            <p><span class="uk-badge">注意</span> 过滤控件可以放在滑块集中，或者，为过滤控件添加 <code>controls</code> 选项到 <code>data-uk-slideset</code> 属性中，并将滑块集的 id 设置在该选项中。如下面的例子：</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -364,7 +364,7 @@
 
                             <h3 class="tm-article-subtitle">Markup</h3>
 
-<pre><code>&lt;!-- The controls are included in the Slideset --&gt;
+<pre><code>&lt;!-- 过滤控件包含在滑块集中 --&gt;
 &lt;div data-uk-slideset&gt;
     &lt;ul&gt;
         &lt;li data-uk-filter=&quot;&quot;&gt;&lt;a&gt;&lt;/a&gt;&lt;/li&gt;
@@ -372,13 +372,13 @@
         &lt;li data-uk-filter=&quot;filter-b&quot;&gt;&lt;a&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 
-    &lt;ul class=&quot;uk-grid uk-slideset&quot;&gt;
+    &lt;ul class=&quot;uk-slideset&quot;&gt;
         &lt;li data-uk-filter=&quot;filter-a&quot;&gt;&lt;img src=&quot;&quot;&gt;&lt;/li&gt;
         &lt;li data-uk-filter=&quot;filter-b&quot;&gt;&lt;img src=&quot;&quot;&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;!-- The controls are outside the Slideset --&gt;
+&lt;!-- 过滤控件在滑块集外面 --&gt;
 &lt;ul id="my-id"&gt;
     &lt;li data-uk-filter=&quot;&quot;&gt;&lt;a&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li data-uk-filter=&quot;filter-a&quot;&gt;&lt;a&gt;&lt;/a&gt;&lt;/li&gt;
@@ -394,16 +394,16 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript options</a></h2>
+                            <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
 
                             <div class="uk-overflow-container">
                                 <table class="uk-table uk-table-striped uk-text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Option</th>
-                                            <th>Possible value</th>
-                                            <th>Default</th>
-                                            <th>Description</th>
+                                            <th>选项</th>
+                                            <th>可用值</th>
+                                            <th>默认值</th>
+                                            <th>描述</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -411,97 +411,100 @@
                                             <td><code>default</code></td>
                                             <td>integer</td>
                                             <td>1</td>
-                                            <td>Default visible items in a set</td>
+                                            <td>一个滑块集中默认可见条目数</td>
                                         </tr>
                                         <tr>
                                             <td><code>small</code></td>
                                             <td>integer</td>
                                             <td>null</td>
-                                            <td>Visible items in a set at small breakpoint</td>
+                                            <td>小视口（small）中显示的条目数</td>
                                         </tr>
                                         <tr>
                                             <td><code>medium</code></td>
                                             <td>integer</td>
                                             <td>null</td>
-                                            <td>Visible items in a set at medium breakpoint</td>
+                                            <td>中视口（medium）中显示的条目数</td>
                                         </tr>
                                         <tr>
                                             <td><code>large</code></td>
                                             <td>integer</td>
                                             <td>null</td>
-                                            <td>Visible items in a set at large breakpoint</td>
+                                            <td>大视口（large）中显示的条目数</td>
                                         </tr>
                                         <tr>
                                             <td><code>xlarge</code></td>
                                             <td>integer</td>
                                             <td>null</td>
-                                            <td>Visible items in a set at xlarge breakpoint</td>
+                                            <td>特大视口（Xlarge）中显示的条目数</td>
                                         </tr>
                                         <tr>
                                             <td><code>animation</code></td>
                                             <td>string</td>
                                             <td>'fade'</td>
-                                            <td>Animation name</td>
+                                            <td>动画的名字</td>
                                         </tr>
                                         <tr>
                                             <td><code>duration</code></td>
                                             <td>integer</td>
                                             <td>200</td>
-                                            <td>Animation duration in ms</td>
+                                            <td>以毫秒为单位的动画持续时间</td>
                                         </tr>
                                         <tr>
                                             <td><code>delay</code></td>
                                             <td>integer</td>
                                             <td>100</td>
-                                            <td>Animation delay between items in a set</td>
+                                            <td>一个滑块集中多个条目之间的动画延时。</td>
                                         </tr>
                                         </tr>
                                         <tr>
                                             <td><code>filter</code></td>
                                             <td>string</td>
                                             <td>''</td>
-                                            <td>Items filter</td>
+                                            <td>滑块条目过滤</td>
                                         </tr>
                                         <tr>
                                             <td><code>autoplay</code></td>
+                                            <td>Boolean</td>
                                             <td>false</td>
-                                            <td>Defines whether or not the slideset items should switch automatically.</td>
+                                            <td>定义滑块集条目是否自动播放</td>
                                         </tr>
                                         </tr>
                                         <tr>
                                             <td><code>pauseOnHover</code></td>
+                                            <td>Boolean</td>
                                             <td>true</td>
-                                            <td>Pause autoplay when hovering a slideset.</td>
+                                            <td>鼠标悬停在滑块集上时，赞同自动播放</td>
                                         </tr>
                                         <tr>
                                             <td><code>autoplayInterval</code></td>
+                                            <td>integer</td>
                                             <td>7000</td>
-                                            <td>Defines the timespan between switching slideset items.</td>
+                                            <td>切换滑块集条目的时间间隔</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <h3 class="tm-article-subtitle">Init element manually</h3>
+                            <h3 class="tm-article-subtitle">手动初始化</h3>
 
                             <pre><code>var slideset = UIkit.slideset(element, { /* options */ });</code></pre>
 
-                            <h3>Events</h3>
+                            <h3>事件</h3>
 
                             <div class="uk-overflow-container">
                                 <table class="uk-table uk-table-striped uk-text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Parameter</th>
-                                            <th>Description</th>
+                                            <th>名称</th>
+                                            <th>参数</th>
+                                            <th>描述</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><code>show.uk.slideset</code></td>
                                             <td>event, set</td>
-                                            <td>On set show</td>
+                                            <td>滑块集显示时触发</td>
                                         </tr>
                                     </tbody>
                                 </table>

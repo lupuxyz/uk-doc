@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Slider component - UIkit documentation</title>
+        <title>滚动条 - UIkit 中文文档</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
         <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.docs.min.css">
@@ -85,15 +85,15 @@
 
                         <article class="uk-article">
 
-                            <h1>Slider</h1>
+                            <h1>滚动条/Slider</h1>
 
-                            <p class="uk-article-lead">Create a list of items to use as a responsive carousel slider</p>
+                            <p class="uk-article-lead">创建一个可以作为响应式旋转木马滚动条的条目列表。</p>
 
-                            <p>The slider is a responsive display of elements that can be scrolled through using the mouse or touch gestures.</p>
+                            <p>滚动条能响应式地显示元素，可以通过鼠标和触摸手势滚动。</p>
 
-                            <h2 id="usage"><a href="#usage" class="uk-link-reset">Usage</a></h2>
+                            <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                            <p>To apply the Slider component, add the <code>data-uk-slider</code> attribute to a container element around a <code>.uk-slider-container</code> element. Add a list of items and assign the <code>.uk-slider</code> class to the list. Use the <code>.uk-width-*</code> and <code>.uk-grid-width-*</code> classes to determine how many elements are visible at once.</p>
+                            <p>要使用滚动条组件，需要为包含 <code>.uk-slider-container</code> 元素的容器元素添加 <code>data-uk-slider</code> 属性。添加条目的列表，并为此列表添加 <code>.uk-slider</code> 类。使用 <code>.uk-width-*</code> 和 <code>.uk-grid-width-*</code> 类以确定每次显示多少个元素。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -136,9 +136,9 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="navigation"><a href="#navigation" class="uk-link-reset">Navigation</a></h2>
+                            <h2 id="navigation"><a href="#navigation" class="uk-link-reset">导航/Navigation</a></h2>
 
-                            <p>The slider itself can be scrolled with click and drag of the mouse or swiping on touch devices. It is a good idea to also add a clickable slidenav navigation. The slidenav adds arrows buttons that appear when you hover the slider.</p>
+                            <p>滚动条本身可以使用鼠标点击和拖拽或者触屏设备中滑动进行滚动。添加一个可以点击的滑动导航也是个好主意。滑动导航添加的箭头按钮会在鼠标悬停在滑动条上时显示出来。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -159,11 +159,11 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="center"><a href="#center" class="uk-link-reset">Center Mode</a></h2>
+                            <h2 id="center"><a href="#center" class="uk-link-reset">居中模式/Center Mode</a></h2>
 
-                            <p>By default, elements of the slider always align to the left edge of the slider container. If you want to center the elements instead, set the <code>center</code> attribute to <code>true</code>.</p>
+                            <p>默认情况下，滚动条的元素总是对齐滚动条容易的左边缘。如果你想让元素居中，设置 <code>center</code> 属性的值为 <code>true</code> 即可。</p>
 
-                            <p><span class="uk-badge">Note</span> The center list element always has the class <code>.uk-active</code> added. You can make use of that if you want to highlight the center element.</p>
+                            <p><span class="uk-badge">注意</span> 被居中的列表元素通常会被添加 <code>.uk-active</code> 类。如果你想高亮显示居中的元素，添加该类名即可。</p>
 
 
                             <h3 class="tm-article-subtitle">Example</h3>
@@ -208,9 +208,9 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="scrolling"><a href="#scrolling" class="uk-link-reset">Disable Infinite Scrolling</a></h2>
+                            <h2 id="scrolling"><a href="#scrolling" class="uk-link-reset">禁用无线滚动</a></h2>
 
-                            <p>By default, the slider loops through all items. To disable that behaviour, set the <code>infinite</code> parameter to <code>false</code>. This works both with center mode enabled and disabled.</p>
+                            <p>默认情况下，滚动条循环显示所有条目。要禁用这种行为，设置 <code>infinite</code> 参数为 <code>false</code> 即可。在启用或禁用居中模式中都同样有效。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -253,11 +253,11 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="gutter"><a href="#gutter" class="uk-link-reset">Item gutter</a></h2>
+                            <h2 id="gutter"><a href="#gutter" class="uk-link-reset">条目排水沟/Item gutter</a></h2>
 
-                            <p>If you want some spacing between your elements, add the <code>.uk-grid</code> class to the slider container. The elements will then be spaced according to the grid gutter.</p>
+                            <p>如果你想为滚动条中的元素添加间距，添加 <code>.uk-grid</code> 类到滚动条容器即可。元素将会根据网格排水沟尺寸被分隔开。</p>
 
-                            <p><span class="uk-badge">Note</span> You can use the modifiers <code>uk-grid-medium</code> and <code>uk-grid-small</code> to change the gutter.</p>
+                            <p><span class="uk-badge">注意</span> 你可以使用网格的修饰类 <code>uk-grid-medium</code> 和 <code>uk-grid-small</code> 来调整排水沟的尺寸。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -283,11 +283,11 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="widths"><a href="#widths" class="uk-link-reset">Item width</a></h2>
+                            <h2 id="widths"><a href="#widths" class="uk-link-reset">条目宽度/Item width</a></h2>
 
-                            <p>To set the widths of your elements, use the width classes from the UIkit grid. Either use the <code>uk-grid-width-*</code> classes on the slider container or use individual widths per list item using the <code>uk-width-*</code> classes.</p>
+                            <p>如果要设置滚动条中各元素的宽度，使用 UIkit 网格中的宽度类即可。既可以在滚动条容器上使用 <code>uk-grid-width-*</code> 类名，也可以为列表中每个条目单独使用 <code>uk-width-*</code> 类名。</p>
 
-                            <h3 class="tm-article-subtitle">Example: Individual widths</h3>
+                            <h3 class="tm-article-subtitle">Example: 为条目单独设置宽度</h3>
 
                             <div class="uk-slidenav-position" data-uk-slider>
 
@@ -324,11 +324,11 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="responsive"><a href="#responsive" class="uk-link-reset">Responsive behaviour</a></h2>
+                            <h2 id="responsive"><a href="#responsive" class="uk-link-reset">响应式行为</a></h2>
 
-                            <p>To adapt to different viewports, you can use the responsive grid classes. In the following example, the slider displays four items on large viewports, three on medium and just one item on small ones.</p>
+                            <p>为了适应不同的视口，你可以使用网格的响应式类名。在下面的例子中，滚动条会在大视口中显示4个条目，在中视口中显示3个，在小视口中显示一个。</p>
 
-                            <h3 class="tm-article-subtitle">Example: Responsive widths</h3>
+                            <h3 class="tm-article-subtitle">Example: 响应式宽度</h3>
 
                             <div class="uk-slidenav-position" data-uk-slider>
 
@@ -364,9 +364,9 @@
 &lt;/div&gt;</code></pre>
                             <hr class="uk-article-divider">
 
-                            <h2 id="fullscreen"><a href="#fullscreen" class="uk-link-reset">Fullscreen mode</a></h2>
+                            <h2 id="fullscreen"><a href="#fullscreen" class="uk-link-reset">全屏模式</a></h2>
 
-                            <p>The slider includes a fullscreen mode where each slide stretches to 100% the height of the viewport.</p>
+                            <p>滚动条包含全屏模式，在全屏模式下，滚动条将延伸至100%的视口高度。</p>
 
                             <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -384,16 +384,16 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript options</a></h2>
+                            <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
 
                             <div class="uk-overflow-container">
                                 <table class="uk-table uk-table-striped uk-text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Option</th>
-                                            <th>Possible value</th>
-                                            <th>Default</th>
-                                            <th>Description</th>
+                                            <th>选项</th>
+                                            <th>可用值</th>
+                                            <th>默认值</th>
+                                            <th>描述</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -401,50 +401,50 @@
                                             <td><code>center</code></td>
                                             <td>boolean</td>
                                             <td>false</td>
-                                            <td>Center items mode</td>
+                                            <td>条目居中模式</td>
                                         </tr>
                                         <tr>
                                             <td><code>threshold</code></td>
                                             <td>boolean</td>
                                             <td>true</td>
-                                            <td>Mouse movement threshold in pixel until trigger element dragging</td>
+                                            <td>移动鼠标触发元素拖动的阈值，以像素为单位。</td>
                                         </tr>
                                         <tr>
                                             <td><code>infinite</code></td>
                                             <td>boolean</td>
                                             <td>true</td>
-                                            <td>Infinite scrolling</td>
+                                            <td>无限滚动</td>
                                         </tr>
                                         <tr>
                                             <td><code>activecls</code></td>
                                             <td>string</td>
                                             <td>uk-active</td>
-                                            <td>Class added on active item in center mode</td>
+                                            <td>在居中模式中，添加到被选中条目上的类名。</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <h3 class="tm-article-subtitle">Init element manually</h3>
+                            <h3 class="tm-article-subtitle">手动初始化元素</h3>
 
                             <pre><code>var slider = UIkit.slider(element, { /* options */ });</code></pre>
 
-                            <h3>Events</h3>
+                            <h3>事件/Events</h3>
 
                             <div class="uk-overflow-container">
                                 <table class="uk-table uk-table-striped uk-text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
+                                            <th>事件名</th>
                                             <th>Parameter</th>
-                                            <th>Description</th>
+                                            <th>描述</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><code>focusitem.uikit.slider</code></td>
+                                            <td><code>focus.uikit.slider</code></td>
                                             <td>event, index, item</td>
-                                            <td>On item focus</td>
+                                            <td>条目获得焦点时触发</td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Parallax component - UIkit documentation</title>
+        <title>视差 - UIkit 中文文档</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
         <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.docs.min.css">
@@ -91,13 +91,13 @@
 
                         <article class="uk-article">
 
-                            <h1>Parallax</h1>
+                            <h1>视差/Parallax</h1>
 
-                            <p class="uk-article-lead">Animate CSS properties depending on the scroll position of the document.</p>
+                            <p class="uk-article-lead">依赖于页面滚动条位置的动态 CSS 特性。</p>
 
-                            <h2 id="usage"><a href="#usage" class="uk-link-reset">Usage</a></h2>
+                            <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                            <p>To apply this component, add the <code>data-uk-parallax</code> attribute to a container element. Add an option with the desired animation target value for each CSS property you want to animate.</p>
+                            <p>要使用这个组件，需要添加 <code>data-uk-parallax</code> 属性到容器元素。并为每个你想要使之动态变化的 CSS 属性添加对应的选项值。</p>
 
                             <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: '-200'}" style="height: 350px; background-image: url('images/placeholder_800x400_2.jpg');">
                                 <div class="uk-width-medium-1-2">
@@ -112,72 +112,72 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="options"><a href="#options" class="uk-link-reset">Options</a></h2>
+                            <h2 id="options"><a href="#options" class="uk-link-reset">选项</a></h2>
 
-                            <p>UIkit provides a number of options that you can add to the <code>data-uk-parallax</code> attribute:</p>
+                            <p>UIkit 提供了一系列的选项，你可以把它们添加到 <code>data-uk-parallax</code> 属性中：</p>
 
                             <div class="uk-overflow-container">
                                 <table class="uk-table uk-text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Option</th>
-                                            <th>Description</th>
+                                            <th>选项</th>
+                                            <th>描述</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><code>x</code></td>
-                                            <td>Animate translateX in pixels.</td>
+                                            <td>以像素为单位的 X 轴方向位移。</td>
                                         </tr>
                                         <tr>
                                             <td><code>xp</code></td>
-                                            <td>Animate translateX in percent.</td>
+                                            <td>以百分比为单位的 X 轴方向位移。</td>
                                         </tr>
                                         <tr>
                                             <td><code>y</code></td>
-                                            <td>Animate translateY in pixels.</td>
+                                            <td>以像素为单位的 Y 轴方向位移。</td>
                                         </tr>
                                         <tr>
                                             <td><code>yp</code></td>
-                                            <td>Animate translateY in percent.</td>
+                                            <td>以百分比为单位的 Y 轴方向位移。</td>
                                         </tr>
                                         <tr>
                                             <td><code>bg</code></td>
-                                            <td>Animate a background image.</td>
+                                            <td>使背景图片动态变化。</td>
                                         </tr>
                                         <tr>
                                             <td><code>bgp</code></td>
-                                            <td>Animate a background image in percent.</td>
+                                            <td>以百分比为单位的背景图片动态变化。</td>
                                         </tr>
                                         <tr>
                                             <td><code>rotate</code></td>
-                                            <td>Animate rotation clockwise in degree.</td>
+                                            <td>以度为单位的顺时针动态变化。</td>
                                         </tr>
                                         <tr>
                                             <td><code>scale</code></td>
-                                            <td>Animate scaling.</td>
+                                            <td>缩放的动态变化</td>
                                         </tr>
                                         <tr>
                                             <td><code>color</code></td>
-                                            <td>Animate color (needs start and stop value).</td>
+                                            <td>色彩的动态变化（需要设置起始值和终止值）</td>
                                         </tr>
                                         <tr>
                                             <td><code>background-color</code></td>
-                                            <td>Animate background-color (needs start and stop value).</td>
+                                            <td>背景色彩的变化（需要设置起始值和终止值）</td>
                                         </tr>
                                         <tr>
                                             <td><code>border-color</code></td>
-                                            <td>Animate border color (needs start and stop value).</td>
+                                            <td>border 色彩的变化（需要设置起始值和终止值）</td>
                                         </tr>
                                         <tr>
                                             <td><code>opacity</code></td>
-                                            <td>Animate the opacity.</td>
+                                            <td>透明度的变化</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <p><span class="uk-badge">NOTE</span> You can basically animate any CSS property that has a single value, like width and height, by adding it to the attribute.</p>
+                            <p><span class="uk-badge">注意</span> 你可以基础性地使任意只有一值的 CSS 属性动态变化，比如宽度和高度，直接添加到属性中即可。</p>
 
                             <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -185,11 +185,11 @@
 
                             <hr class="uk-article-divider">
 
-                            <h3 id="start-stop-value"><a href="#start-stop-value" class="uk-link-reset">Start and stop values</a></h3>
+                            <h3 id="start-stop-value"><a href="#start-stop-value" class="uk-link-reset">起始值和终止值</a></h3>
 
-                            <p>Properties are always animated from the current value to the target value which you set in the option. However, you can also define a start value yourself. This is done by passing a string to the option which contains two values separated by comma.</p>
+                            <p>属性通常由当前值变化到你设置的目标值。然而，你还可以自己定义一个起始值。这将通过传递字符串到包含由逗号隔开的两个值的选项中来实现。</p>
 
-                            <p><span class="uk-badge">NOTE</span> Some properties, like colors, require a start and a stop value!</p>
+                            <p><span class="uk-badge">注意</span> 某些属性，比如颜色，必须要有起始值和终止值。</p>
 
                             <h4 class="tm-article-subtitle">Markup</h4>
 
@@ -197,9 +197,9 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="nested-animation"><a href="#nested-animation" class="uk-link-reset">Nested animation</a></h2>
+                            <h2 id="nested-animation"><a href="#nested-animation" class="uk-link-reset">嵌套的动画/Nested animation</a></h2>
 
-                            <p>Using different animations for nested elements is a simple task. Just create another container within the first parallax container and add your options to a new <code>data-uk-parallax</code> attribute.</p>
+                            <p>为前提的元素使用不同的动画是很简单的事情。只需在视差容器中再创建一个容器，并在新的 <code>data-uk-parallax</code> 属性中添加你的选项即可。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -218,16 +218,16 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="target-option"><a href="#target-option" class="uk-link-reset">Target Option</a></h2>
+                            <h2 id="target-option"><a href="#target-option" class="uk-link-reset">目标选项/Target Option</a></h2>
 
-                            <p>Usually, the animation lasts as long as the element itself is in the viewport. To start and stop the animation based on the viewport visibility of another element, use the <code>target</code> option. This can be helpful when using nested animations.</p>
+                            <p>通常，视差动画从元素进入视口开始，到离开视口结束。开始和终止动画基于另一个元素在视口中的可见性，使用 <code>target</code> 选项进行设置。在使用嵌套动画时会很有帮助。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
                             <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: -200}" style="height: 350px; background-image: url('images/placeholder_800x400_2.jpg');">
                                 <div class="uk-width-medium-1-2" data-uk-parallax="{opacity: '0,1', scale: '0,1', target: '#target-option'}">
                                     <h1 class="uk-text-contrast">Heading</h1>
-                                    <p class="uk-text-large">This text is animated as long as the headline &quot;Target Option&quot; is in the viewport.</p>
+                                    <p class="uk-text-large">这段文字的动画在上面的 &quot;目标选项/Target Option&quot; 存在于视口中时，一直持续发生。</p>
                                 </div>
                             </div>
 
@@ -240,9 +240,9 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="velocity"><a href="#velocity" class="uk-link-reset">Velocity</a></h2>
+                            <h2 id="velocity"><a href="#velocity" class="uk-link-reset">速度/Velocity</a></h2>
 
-                            <p>To adjust the easing of the animation, add the <code>velocity</code> option.</p>
+                            <p>添加 <code>velocity</code> 选项，调整动画的缓动效果。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
@@ -266,16 +266,16 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="viewport"><a href="#viewport" class="uk-link-reset">Viewport</a></h2>
+                            <h2 id="viewport"><a href="#viewport" class="uk-link-reset">视口/Viewport</a></h2>
 
-                            <p>Using the <code>viewport</code> option, the animation duration can be adjusted. With the value <code>1</code> or <code>false</code> the animation lasts as long as the element is in the viewport. Setting it to <code>0.5</code>, for example, animates the property only in the first half of the viewport.</p>
+                            <p>使用 <code>viewport</code> 选项，动画持续时间将被调整。其值为 <code>1</code> 或 <code>false</code> 时，视差动画从元素进入视口开始，到离开视口结束。将其设置为 <code>0.5</code>，如下面的例子，动画只在元素出现的前半个视口中发生。</p>
 
                             <h3 class="tm-article-subtitle">Example</h3>
 
                             <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: -200}" style="height: 350px; background-image: url('images/placeholder_800x400_1.jpg');">
                                 <div class="uk-width-medium-1-2" data-uk-parallax="{opacity: '0,1', scale: '0,1', viewport: '0.5'}">
                                     <h1 class="uk-text-contrast">Heading</h1>
-                                    <p class="uk-text-large">This text is animated until it reaches the middle of the viewport.</p>
+                                    <p class="uk-text-large">这段文字的动画会在其抵达时候中部前持续发生。</p>
                                 </div>
                             </div>
 
@@ -285,16 +285,16 @@
 
                             <hr class="uk-article-divider">
 
-                            <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript options</a></h2>
+                            <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
 
                             <div class="uk-overflow-container">
                                 <table class="uk-table uk-table-striped uk-text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Option</th>
-                                            <th>Possible value</th>
-                                            <th>Default</th>
-                                            <th>Description</th>
+                                            <th>选项</th>
+                                            <th>可用值</th>
+                                            <th>默认值</th>
+                                            <th>描述</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -302,31 +302,25 @@
                                             <td><code>velocity</code></td>
                                             <td>float</td>
                                             <td>0.5</td>
-                                            <td>Animation velocity during scrolling</td>
+                                            <td>页面滚动时，动画的速度</td>
                                         </tr>
                                         <tr>
                                             <td><code>target</code></td>
                                             <td>mixed</td>
                                             <td>false</td>
-                                            <td>Element dimension reference for animation duration.</td>
+                                            <td>关于动画持续时间的元素尺寸参考/Element dimension reference for animation duration.</td>
                                         </tr>
                                         <tr>
                                             <td><code>viewport</code></td>
                                             <td>float (0 to 1)</td>
                                             <td>false</td>
-                                            <td>Animation range depending on the viewport.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>media</code></td>
-                                            <td>integer / string</td>
-                                            <td>false</td>
-                                            <td>Condition for the active status with a width as integer (e.g. 640) or a css media query</td>
+                                            <td>依赖于视口的动画范围</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <h3 class="tm-article-subtitle">Init element manually</h3>
+                            <h3 class="tm-article-subtitle">手动初始化</h3>
 
                             <pre><code>var parallax = UIkit.parallax(element, { /* options */ });</code></pre>
 
