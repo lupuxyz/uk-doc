@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Warp Framework 7 中文文档</title>
+        <meta name="description" content="Warp是YOOtheme团队开发的一款快速和简洁的主题框架，它提供了丰富的工具集，用于开发跨平台的主题。UIkit中文网为广大国内开发者提供详尽的Warp主题框架的中文文档，帮助主题开发者与用户快速掌握并使用这一框架进行主题的定制和开发。">
+        <meta name="author" content="UIkit中文网">
+        <meta name="keywords" content="Themes Warp framework,warp 7,wordpress,wordpress 主题,joomla,joomla 模板,主题框架,UIkit，响应式,主题开发">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.almost-flat.css">
+        <link rel="stylesheet" href="css/docs.css">
+        <link rel="stylesheet" href="css/highlight.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+    </head>
+
+    <body class="tm-background">
+
+        <nav class="tm-navbar uk-navbar uk-navbar-attached">
+            <div class="uk-container uk-container-center">
+
+                <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
+                    <li><a href="File-structure.html">主题开发</a></li>
+                    <li><a href="Installation-issues.html">排除故障</a></li>
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+                <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+                <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+
+            </div>
+        </nav>
+
+        <div class="tm-section tm-section-color-1 tm-section-colored">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <img class="tm-logo" src="images/logo2.svg" width="281" height="217" title="Warp 主题框架" alt="Warp 主题框架" >
+
+                <p class="uk-text-large">一款快速和简洁的主题框架<br class="uk-hidden-small">它提供了丰富的工具集，用于开发跨平台的主题</p>
+
+                <a class="uk-button tm-button-download" href="http://yootheme.com/themes/downloads/download" rel="nofollow" target="_blank">下载 Master 2</a>
+
+                <ul class="tm-subnav uk-subnav uk-flex-center">
+                    <li><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
+                    <li><a href="http://yootheme.com/themes/warp-framework" rel="nofollow">Themes Warp Framework 7</a></li>
+                </ul>
+
+                <ul class="tm-subnav uk-subnav uk-flex-center">
+                    <li><a href="http://weibo.com/getuikit" target="_blank" rel="nofollow"><i class="uk-icon-weibo"></i> @getuikit</a></li>
+                    <li><i class="uk-icon-qq" style="color:#fff;"></i>QQ群:299654266</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tm-section  tm-section-color-white">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <h1 class="uk-heading-large">主题开发的正确姿势</h1>
+
+                <p class="uk-text-large">使用精心设计的框架，轻松创建属于你的主题。</p>
+
+                <div class="uk-grid" data-uk-grid-margin>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove"><i class="uk-icon-check"></i> 已支持的系统</h2>
+                            <p>Warp 框架支持 Joomla 和 Wordpress，并且可以扩展运行于其他系统中。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove"><i class="uk-icon-cog"></i> 一次开发</h2>
+                            <p>主题可以在已支持的系统间轻松移植，并保留其所有功能。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove"><i class="uk-icon-folder-open"></i> 轻便、独立</h2>
+                            <p>Warp 框架单独存放在其文件夹中，无耦合。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove"><i class="uk-icon-puzzle-piece"></i> 模块化、可扩展</h2>
+                            <p>只需选择你需要的框架工具，便可轻松添加新功能。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove"><i class="uk-icon-flash"></i> 快速、轻量级</h2>
+                            <p>Warp 框架经过精心的设计与编码，具有最佳的加载速度。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove"><i class="uk-icon-star"></i> 尖端</h2>
+                            <p>完全建立在最新的Web技术基础上，如 HTML5，CSS3 和 PHP5.2+</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        
+
+        <div class="tm-section tm-section-color-2 tm-section-colored">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <h1 class="uk-heading-large">特色</h1>
+
+                <p class="uk-text-large">六大特色助你简化开发流程</p>
+                <div class="uk-grid" data-uk-grid-margin>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove">响应式设计</h2>
+                            <p>响应式布局，完美适配所有分辨率的设备，手机、平板、台式计算机均不在话下。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove">系统化标签</h2>
+                            <p>充分利用 HTML5 实现跨平台开发，语义化 HTML 标签助力搜索引擎优化。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove">轻量级 CSS 框架</h2>
+                            <p>基于<a href="http://www.getuikit.net" rel="nofollow" target="_blank" style="text-decoration:underline;">UIkit</a> ——一款轻量级、模块化的前端框架开发，提供强大的前端界面支持。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove">JavaScript 特效</h2>
+                            <p>巧妙的JavaScript设计，低调奢华地增强用户体验。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove">模块化布局</h2>
+                            <p>Warp 主题框架为你带来具有广泛用途的模块化布局解决方案，轻松定制布局与样式。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <h2 class="uk-margin-top-remove">创建自定义主题样式</h2>
+                            <p>通过继承或覆写默认主题资源进行子主题样式定制。</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tm-section  tm-section-color-white">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <h1 class="uk-heading-large">Warp Speed, Engage!</h1>
+
+                <p class="uk-text-large">Combine, minify, cache and compress CSS and JavaScripts
+on the fly. Reduce HTTP requests with Data URIs.</p>
+                <img src="images/themes_warp_speed.png" title="Warp Speed" alt="Warp Speed">
+
+            </div>
+        </div>
+
+
+        <div class="tm-footer">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="http://yootheme.com/themes/documentation?view=docs" rel="nofollow">英文文档</a></li>
+                    <li><a href="https://github.com/yootheme/docs" rel="nofollow">Github</a></li>
+                    <li><a href="https://twitter.com/getuikit" rel="nofollow">官方Twitter</a></li>
+                    <li><a href="http://weibo.com/getuikit" rel="nofollow">中文微博</a></li>
+                     
+                </ul>
+
+                <div class="uk-panel">
+                    <p>由<a href="http://www.getuikit.net/">UIkit中文网</a>翻译</p>
+                    <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tm-offcanvas" class="uk-offcanvas">
+
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
+                    <li ><a href="#">Warp 中文文档</a>
+                        
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
+                        <ul class="uk-nav-sub">
+<li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

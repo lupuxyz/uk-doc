@@ -1,0 +1,7 @@
+<ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-active"><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
+                    <li><a href="File-structure.html">主题开发</a></li>
+                    <li><a href="Installation-issues.html">排除故障</a></li>
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>

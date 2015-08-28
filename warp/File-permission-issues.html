@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>文件权限问题 - Warp Framework 7 中文文档</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.almost-flat.css">
+        <link rel="stylesheet" href="css/docs.css">
+        <link rel="stylesheet" href="css/highlight.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+    </head>
+
+    <body class="tm-background">
+
+        <nav class="tm-navbar uk-navbar uk-navbar-attached">
+            <div class="uk-container uk-container-center">
+
+                <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
+                    <li><a href="File-structure.html">主题开发</a></li>
+                    <li class="uk-active"><a href="Installation-issues.html">排除故障</a></li>
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+                <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+                <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+
+            </div>
+        </nav>
+
+        <div class="tm-middle">
+            <div class="uk-container uk-container-center">
+
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">
+
+                        <ul class="tm-nav uk-nav" data-uk-nav>
+
+                            <li class="uk-nav-header">开始使用</li>
+                            <li><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                            <li class="uk-nav-header">开发者</li>
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                            
+                            <li class="uk-nav-header">排除故障</li>
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li class="uk-active"><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            
+
+<h1 class="title">文件权限问题</h1>
+
+<p class="article-lead">学习如何处理Warp主题中的文件权限问题。</p>
+                            <hr class="uk-article-divider">
+
+<p>在使用Joomla或Wordpress时，有两种访问文件的方式：直接通过WEB服务器或者FTP客户端。不同的文件和目录拥有不同的权限，指定谁能读取、写入或访问他们。有时，web服务器和FTP客户端的权限设置可能冲突，所以，在后短尝试安装扩展时，你会遇到这些消息，例如<em>JFolder::create: Could not create directory</em> 或 <em>Directory not writable: /administrator/templates/system/</em> 或者您可能无法保存主题设置。</p>
+
+<h2>改变文件权限</h2>
+
+<p>要想解决这些问题，你需要改变受影响的文件或目录的权限。</p>
+
+<h3>使用FTP 客户端</h3>
+
+<ol>
+  <li>打开你的FTP客户端，没有的话下载安装<a href="https://filezilla-project.org/" rel="nofollow">FileZilla</a> 吧。</li>
+  <li>使用FTP客户端登入服务器，进入相应的web根目录。</li>
+  <li>鼠标右击想要改变权限的目录，点击<em>文件权限/File Permissions...</em></li>
+  <li>其中<em>改变文件属性/Change File Attributes</em>对话框让你能查看各种选项或<em>755</em>这样的数值。确保<em>递归到子目录/Recurse into subdirectories</em>选项已被选中。然后点击OK。</li>
+</ol>
+
+<p><span class="uk-badge uk-badge-danger">重要</span> 避免出现 <em>777</em> 权限。如果web服务器在 <em>755</em> 权限下依然有问题，可以尝试 <em>775</em> ，最后才尝试使用 <em>777</em> 。 </p>
+
+<h3>使用Joomla扩展访问web服务器</h3>
+
+<p>Using an FTP client may also change file ownership to the FTP user of the files or directories you changed the permissions on. This may cause problems on some webservers. To avoid this, you can use a Joomla component like <em>eXtplorer</em> to update the permission through the Joomla administration.</p>
+
+<ol>
+  <li>Download the Joomla component <a href="http://extensions.joomla.org/extensions/core-enhancements/file-management/2630" rel="nofollow">eXtplorer</a> and install it. It allows you to edit, delete, copy, rename, archive and unpack files and directories directly on your webserver.</li>
+  <li>Login to your Joomla administration, go to the eXtplorer component and browse to the directory on which you want to change the permissions.</li>
+  <li>Right click on the directory and choose <em>Change Rights</em>.</li>
+  <li>Check the options as shown below. Make sure the <em>Recurse into subdirectories</em> option is checked. Then hit the Save button.</li>
+</ol>
+
+<p>Find out more about file permissions in the <a href="http://docs.joomla.org/Security_Checklist/Where_can_you_learn_more_about_file_permissions%3F" rel="nofollow">Joomla documentation</a>.</p>
+
+<h3>WordPress</h3>
+
+<p>查看<a href="http://codex.wordpress.org/Changing_File_Permissions" rel="nofollow">WordPress 文档</a>，了解关于文件权限的更多信息。</p>
+                            
+
+                            
+
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tm-footer">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="http://yootheme.com/themes/documentation?view=docs" rel="nofollow">英文文档</a></li>
+                    <li><a href="https://github.com/yootheme/docs" rel="nofollow">Github</a></li>
+                    <li><a href="https://twitter.com/getuikit" rel="nofollow">官方Twitter</a></li>
+                    <li><a href="http://weibo.com/getuikit" rel="nofollow">中文微博</a></li>
+                     
+                </ul>
+
+                <div class="uk-panel">
+                    <p>由<a href="http://www.getuikit.net/">UIkit中文网</a>翻译</p>
+                    <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tm-offcanvas" class="uk-offcanvas">
+
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
+                    <li ><a href="#">Warp 中文文档</a>
+                        
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
+                        <ul class="uk-nav-sub">
+<li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

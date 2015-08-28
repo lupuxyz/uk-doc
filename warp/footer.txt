@@ -1,0 +1,69 @@
+<div class="tm-footer">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="http://yootheme.com/themes/documentation?view=docs" rel="nofollow">英文文档</a></li>
+                    <li><a href="https://github.com/yootheme/docs" rel="nofollow">Github</a></li>
+                    <li><a href="https://twitter.com/getuikit" rel="nofollow">官方Twitter</a></li>
+                    <li><a href="http://weibo.com/getuikit" rel="nofollow">中文微博</a></li>
+                     
+                </ul>
+
+                <div class="uk-panel">
+                    <p>由<a href="http://www.getuikit.net/">UIkit中文网</a>翻译</p>
+                    <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tm-offcanvas" class="uk-offcanvas">
+
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
+                    <li ><a href="#">Warp 中文文档</a>
+                        
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
+                        <ul class="uk-nav-sub">
+<li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+            </div>
+
+        </div>

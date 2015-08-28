@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wordpress 主题设置 - Warp Framework 7 中文文档</title>
+        <meta name="description" content="学习如何使用Warp主题，如何用Warp开发主题，以及如何排除故障。本教程为你带来关于设置 Wordpress 和 Warp Framework 框架的简要介绍。">
+        <meta name="author" content="UIkit中文网">
+        <meta name="keywords" content="Themes Warp framework,warp 7,wordpress 主题，warp 框架,小工具,菜单">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.almost-flat.css">
+        <link rel="stylesheet" href="css/docs.css">
+        <link rel="stylesheet" href="css/highlight.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+    </head>
+
+    <body class="tm-background">
+
+        <nav class="tm-navbar uk-navbar uk-navbar-attached">
+            <div class="uk-container uk-container-center">
+
+                <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-active"><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
+                    <li><a href="File-structure.html">主题开发</a></li>
+                    <li><a href="Installation-issues.html">排除故障</a></li>
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+                <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+                <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+
+            </div>
+        </nav>
+
+        <div class="tm-middle">
+            <div class="uk-container uk-container-center">
+
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">
+
+                        <ul class="tm-nav uk-nav" data-uk-nav>
+
+                            <li class="uk-nav-header">开始使用</li>
+                            <li><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li class="uk-active"><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                            <li class="uk-nav-header">开发者</li>
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                            
+                            <li class="uk-nav-header">排除故障</li>
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1>开始使用</h1>
+
+                            <p class="uk-article-lead">学习如何使用Warp主题，如何用Warp开发主题，以及如何排除故障。</p>
+
+                            <p>首先，你需要下载一份Warp主题。在 <a href="http://yootheme.com/themes/downloads/download" target="_blank" rel="nofollow">YOOtheme</a>的下载页面中，下载 <em>Master 2</em> 免费主题。在下载的ZIP压缩包内，包含最新的Warp主题框架。</p>
+
+                            <p><a class="uk-button uk-button-large uk-button-primary" href="http://yootheme.com/themes/downloads/download" rel="nofollow" target="_blank">下载 Warp</a></p>
+
+                            <hr class="uk-article-divider">
+
+<h1 class="title">设置 WordPress 主题</h1>
+
+<p class="article-lead">本教程为你带来关于设置 Wordpress 和 Warp Framework 框架的简要介绍。</p>
+
+<h2>安装</h2>
+
+<p>安装Warp主题和安装其他主题一样遵循着标准的 Wordpress 安装流程。</p>
+
+<ol>
+  <li>从 <a href="http://cn.wordpress.org/" rel="nofollow">WordPress 官方网站</a> 下载 Wordpress 。</li>
+  <li>在服务器环境中安装 Wordpress 。</li>
+  <li>安装并启用主题。</li>
+</ol>
+
+<p>了解更多信息，请查询官方<a href="http://codex.wordpress.org/" rel="nofollow">WordPress 文档</a>。</p>
+
+<h3>安装演示包 - demo package</h3>
+
+<p>演示包是一个完整的 Wordpress 安装包，包含了主题和演示数据来支撑布局，构建演示站点。如果你不想从头开始做起或者只是想看看所有东西加入之后是什么样子，这个演示包很有用哦。</p>
+
+<h3>排除故障</h3>
+
+<p>如果安装后，Wordpress没有正常运行或者出现了错误信息，你可能想要尝试手动安装主题。</p>
+
+<ol>
+  <li>在你的电脑上解压 <code>.zip</code> 文件到一个文件夹目录中。</li>
+  <li>使用FTP上传主题文件到Web服务器上的 <code>/wp-content/themes</code> 文件夹。</li>
+  <li>在Wordpress后台管理界面的 <em>外观 &gt; 主题</em> 中，可以看到已经安装的主题。</li>
+  <li>点击 <em>启用</em> 激活刚刚安装的主题。</li>
+</ol>
+
+<p>在<a title="安装问题" href="Installation-issues.html">安装问题</a>页面，获取关于排除故障和解决PHP难题的进一步指导。</p>
+
+<h2>指定小工具的位置</h2>
+
+<p>如果你的Wordpress里已经有了内容，激活新的主题很可能让你的网站看起来怪怪的。究其原因，是小工具没有适配主题，而是被分配指定到了默认的位置。我们可以通过把这些小工具放置到主题中合适的位置来改变现状。</p>
+
+<p>在Wordpress后台，访问 <em>外观 &raquo; 小工具</em>。一开始，你可能想要把大多数小工具拖拽到 <em>未使用的小工具</em> 里。在我们的例子中，这些小工具都被放在 <em>Search</em> 这个位置。我们将会移除除了实际的搜索小工具外的其他全部小工具。</p>
+
+<img src="images/disable_widgets.gif" alt="拖拽到未使用的小工具" width="700" height="415" />
+
+<p>查看你的站点，它看起来应该不那么凌乱了。现在，你可以将小工具分配到主题中的几个可用位置中了。在<a href="http://yootheme.com/demo/" rel="nofollow">我们的在线演示网站</a>，查看 <em>Features &raquo; Layouts</em> 获取关于主题中所有小工具位置的总览。</p>
+
+<h2>创建菜单</h2>
+
+<p>为了让你的主题知道主导航应该用什么内容来呈现，我们需要在Wordpress中创建一个菜单，并将其指定为主导航菜单。</p>
+
+<p>首先，你需要新建一个菜单，并添加菜单条目。查看<a href="http://codex.wordpress.org/WordPress_Menu_User_Guide" rel="nofollow">WordPress 文档</a>了解详细信息。在下面的例子中，我们默认地添加所有的页面作为菜单的条目，然后移除了一个我们不想要的。</p>
+
+<img src="images/create_menu.gif" alt="创建菜单" width="400" height="487" />
+
+<p> 现在，我们只需要选择刚才创建的菜单作为网站的主导航。在页面上方点击 <em>管理位置</em> 选项卡，从下拉菜单中选择菜单。</p>
+
+<img src="images/assign_menu.gif" alt="指定菜单作为主导航" width="450" height="212" />
+
+
+<h3>小型设备上的菜单</h3>
+
+<p>默认的菜单会在小型设备上隐藏。你可以并且应该使用 <em>抽屉（offcanvas）</em> 位置，作为移动设备友好版的菜单。抽屉元素会被一枚菜单图标拨动。你还可以在这个位置放入其他小工具，但菜单应该是任何情况下被都应首先考虑的。</p>
+
+<img src="images/offcanvas_menu.gif" alt="用自定义菜单作为抽屉式导航" width="1000" height="546" />
+
+<h3>任意位置的菜单与菜单样式</h3>
+
+<p>你可以创建任意数量的菜单，并通过Wordpress后台的 <em>小工具</em> 中的 <em>自定义菜单</em> 小工具进行发布。你可以将这个小工具指定到你喜欢的任何位置。</p>
+
+<p>有三种不同的菜单样式，<em>大型下拉菜单（Mega dropdown menu）</em>作为主菜单，<em>手风琴菜单（Accordion menu）</em>用在侧边栏，<em>线性菜单（Line menu）</em>用于工具栏或底部。Warp框架会根据菜单发布的位置进行自动地样式化。</p>
+
+<h2>创建LOGO</h2>
+
+<p>在Wordpress中设置LOGO真的很简单。只需创建一个<em>文本</em>小工具，并将它放在 <em>Logo</em> 位置上就行了。然后，在小工具中写入HTML代码就行。</p>
+
+<p>例如，使用下面的代码：</p>
+
+<pre><code>&lt;img src&#61;"wp-content/uploads/logo.png" width&#61;"200" height&#61;"50" alt&#61;"logo" /&gt;</code></pre>
+
+<p>Warp 7 还提供了 <code>小LOGO（logo-small）</code> 位置，你可以在这里放入用于显示在小视口设备上的LOGO图片。</p>
+
+<p><span class="badge">注意</span> 如果LOGO图片没有在所有页面上都可见，只需要在路径前面添加一个斜杠就行，比如： <code>/wp-content/uploads/logo.png</code> 。</p>
+
+<img src="images/add_logo.gif" alt="为主题添加LOGO" width="800" height="522" />
+                            
+
+                            
+
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tm-footer">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="http://yootheme.com/themes/documentation?view=docs" rel="nofollow">英文文档</a></li>
+                    <li><a href="https://github.com/yootheme/docs" rel="nofollow">Github</a></li>
+                    <li><a href="https://twitter.com/getuikit" rel="nofollow">官方Twitter</a></li>
+                    <li><a href="http://weibo.com/getuikit" rel="nofollow">中文微博</a></li>
+                     
+                </ul>
+
+                <div class="uk-panel">
+                    <p>由<a href="http://www.getuikit.net/">UIkit中文网</a>翻译</p>
+                    <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tm-offcanvas" class="uk-offcanvas">
+
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
+                    <li ><a href="#">Warp 中文文档</a>
+                        
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
+                        <ul class="uk-nav-sub">
+<li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

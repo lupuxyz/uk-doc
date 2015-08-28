@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LESS 自定义 - Warp Framework 7 中文文档</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.almost-flat.css">
+        <link rel="stylesheet" href="css/docs.css">
+        <link rel="stylesheet" href="css/highlight.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+    </head>
+
+    <body class="tm-background">
+
+        <nav class="tm-navbar uk-navbar uk-navbar-attached">
+            <div class="uk-container uk-container-center">
+
+                <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
+                    <li class="uk-active"><a href="File-structure.html">主题开发</a></li>
+                    <li><a href="Installation-issues.html">排除故障</a></li>
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+                <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+                <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+
+            </div>
+        </nav>
+
+        <div class="tm-middle">
+            <div class="uk-container uk-container-center">
+
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">
+
+                        <ul class="tm-nav uk-nav" data-uk-nav>
+
+                            <li class="uk-nav-header">开始使用</li>
+                            <li><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                            <li class="uk-nav-header">开发者</li>
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li class="uk-active"><a href="LESS-Customization.html">LESS自定义</a></li>
+                            
+                            <li class="uk-nav-header">排除故障</li>
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            
+
+                            
+<h1 class="title">LESS 自定义</h1>
+
+<p class="article-lead">学习如何在主题中实现LESS自定义，添加你自己的UIkit主题或为定制工具添加新的设置项目。</p>
+                            <hr class="uk-article-divider">
+
+<h2>文件结构</h2>
+
+<p>关于<code>/less</code>文件夹的简单概览：</p>
+
+<table class="zebra">
+  <thead>
+    <tr>
+      <th>文件/文件夹</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/less/theme.less</code></td>
+      <td>定义主题的样式并引入UIkit主题。每当你在主题设置中点击<em>编译LESS（Compile LESS）</em>时，这个文件便会被编译成CSS并保存在 <code>/css</code> 文件夹中。同时，所有的样式会被保存在<code>/styles/STYLE-NAME/css</code> 文件夹。</td>
+    </tr>
+    <tr>
+      <td><code>/less/customizer.json</code></td>
+      <td>定义哪些定制器参数会被默认显示或显示在增强模式中。它集合了UIkit的变量，规定哪些可以被色彩选择器赋值，哪些可以直接输入或者用选择框添加字体等。</td>
+    </tr>
+    <tr>
+      <td><code>/less/bootstrap.less</code></td>
+      <td>导入所有Boostrap相关文件（仅用于Joomla）。比如<code>/less/theme.less</code> 这个文件,每当在主题设置中点击<em>编译LESS（Compile LESS）</em>，它便会被编译为CSS。</td>
+    </tr>
+    <tr>
+      <td><code>/less/uikit</code></td>
+      <td>包含UIkit主题文件。UIkit的核心文件在<code>/warp/vendor/uikit</code>文件夹中。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>添加自定义LESS文件夹</h2>
+
+<p>在进行LESS自定义前，首先按以下教程操作：</p>
+
+<ol>
+  <li>复制<code>/less</code>文件夹，并重命名为<code>/less-custom</code>.</li>
+  <li>打开主题的<code>config.php</code>文件，并注册新文件夹，替换<code>/less</code> 文件夹:
+<pre><code>'path' => array(
+    'theme'   => array(__DIR__),
+    'js'      => array(__DIR__.'/js'),
+    'css'     => array(__DIR__.'/css'),
+    'less'    => array(__DIR__.'/less-custom'), // Here
+    'layouts' => array(__DIR__.'/layouts')
+),</code></pre>
+      <span class="uk-badge">注意</span> 这将改变核心的LESS文件夹。在定制工具中进行改动生成所有样式都将编译CSS到新建的<code>/less-custom</code>文件夹中。</li>
+<li>用以下引入规则替换全部内容，在新的<code>/less-custom/theme.less</code>中引入原来的<code>/less/theme.less</code>
+<pre><code>@import "../less/theme.less";</code></pre>
+对于Joomla 3：为了使自定义操作有迹可循，使用以下引入规则，在新的<code>/less-custom/bootstrap.less</code>中引入原来的<code>/less/bootstrap.less</code> 。
+<pre><code>@import "../less/bootstrap.less";</code></pre></li>
+<li>删除文件夹<code>/less-custom/UIkit</code> 和 <code>/less-custom/bootstrap</code></li>
+<li>现在，你可以开始在<code>/less-custom/theme.less</code>中添加你的自定义代码了。</li>
+</ol>
+
+
+<h2>定制 UIkit</h2>
+
+<p>UIkit有它自己的文档，查看<a href="http://www.getuikit.com" rel="nofollow">UIkit</a>（<a href="http://www.getuikit.net">UIkit中文网</a>）。在开始使用Warp主题和UIkit时，你可能需要看一下文档中的 <a href="http://www.getuikit.cnet/docs/documentation_variables.html">变量</a>, <a href="http://www.getuikit.net/docs/documentation_create-a-theme.html">最佳主题实践</a> 以及 <a href="http://www.getuikit.net/docs/documentation_customizer-json.html">customizer.json</a>。</p>
+
+<p>按以下步骤添加你自己的UIkit主题。</p>
+
+<ol>
+  <li>按以上教程<b>添加自定义LESS文件夹</b>。</li>
+  <li>复制以下文件到你的<code>/less-custom/</code> 文件夹：
+    <ol>
+      <li><code>/less/uikit</code></li>
+      <li><code>/less/bootstrap.less</code></li>
+      <li><code>/less/theme.less</code></li>
+    </ol>
+  </li>
+  <li>现在你可以定制<code>/less-custom</code>中的所有文件了，比如整个<code>/less-custom/uikit</code>文件夹，在<code>/less-custom/theme.less</code>文件或<code>/less-custom/customizer.json</code>文件中添加自定义变量。</li>
+</ol>
+
+<h2>在定制工具中选择自定义字体</h2>
+
+<p>Warp框架可以访问<a href="http://www.google.com/fonts/" rel="nofollow">Google字体库</a>中所有可用的字体。但是，你可能会想要添加你自己的字体或者不是由谷歌提供的字体。</p>
+
+<h3>用链接添加字体</h3>
+
+<ol>
+  <li>按以上教程<b>添加自定义LESS文件夹</b>。</li>
+  <li>打开<code>/less-custom/customizer.json</code>文件，并在列表中添加你的字体选项以及正确的路径。
+<pre></code>"Custom Fonts": [
+    {"name": "FONT-FAMILY", "value": "'FONT-FAMILY'", "url":""}
+],
+"System Fonts": [ ... ]</code></pre>
+  </li>
+</ol>
+
+<h3>添加自有字体</h3>
+
+<ol>
+  <li>按以上教程<b>添加自定义LESS文件夹</b>。</li>
+  <li>在主题目录中新建一个<code>/fonts</code>文件夹，并将字体文件放入其中。</li>
+  <li>在<code>/less-custom/theme.less</code>中添加字体的<code>@font-face</code> 规则，并链接到你的字体文件：
+<pre></code>@font-face {
+  font-family: 'FONT-FAMILY';
+  src: url('../fonts/FONT-FAMILY-webfont.eot');
+  ....
+}</code></pre>
+
+</li>
+  <li>打开<code>/less-custom/customizer.json</code>文件，像这样添加字体设置：
+<pre></code>"Custom Fonts": [
+    {"name": "FONT-FAMILY", "value": "\"FONT-FAMILY\", Helvetica, Arial, sans-serif"}
+],
+"System Fonts": [ ... ]</code></pre>
+  </li>
+</ol>
+
+
+
+<p>好了！现在可以在主题中使用你的字体了。</p>
+
+<h2>定制工具与图片</h2>
+
+<p>如果想要添加选择图片的选项，比如不同的背景，在定制工具中，你可以按以下教程进行操作。我们约定，你想要添加的两个不同背景样式是<b>red</b> 和 <b>blue</b>。</p>
+
+<ol>
+  <li>首先，在<code>/styles/STYLE-NAME</code>目录中新建一个<code>/images</code>文件夹，将你的背景图片放到这里。</li>
+
+  <li>按以上<b>添加自定义LESS文件夹</b>的教程新建一个<code>theme.less</code>。</li>
+
+  <li>为主体样式（body style）创建一个新变量，并添加到<code>/less-custom/theme.less</code> 文件。
+
+<pre><code>@theme_global-body-style:    '';</code></pre></li>
+
+<li>现在，我们将为每种背景，创建mixin。在我们的例子中，分别为red和blue创建了mixin.
+
+<pre></code>.body-style() when (@theme_global-body-style = red) {
+
+  body { background: url(../styles/STYLE-NAME/images/my-red.jpg) 0 0 repeat; }
+
+}
+
+.body-style() when (@theme_global-body-style = blue) {
+
+  body { background: url(../styles/STYLE-NAME/images/my-blue.jpg) 0 0 repeat; }
+
+}</code></pre></li>
+
+  <li>然后，我们需要调用生成实际CSS的mixin。
+
+<pre><code>.body-style();</code></pre></li>
+
+  <li>现在，为主体样式（body style）<code>@theme_global-body-style</code>创建一个选择框。只需添加以下代码到<code>/less-custom/customizer.json</code>中。
+
+
+<pre><code>{
+    "type": "select",
+    "vars": [
+        "@theme_global-body-style"
+    ],
+    "options": [
+        {"name": "Default", "value": ""},
+        {"name": "Red", "value": "red"},
+        {"name": "Blue", "value": "blue"}
+    ]
+},</code></pre></li>
+
+  <li>最后，在新创建的变量组（group）中进行定义。在我们的例子中，我们将定义添加到<em>General</em> 变量。
+
+<pre><code>    "groups": [
+        {
+            "label": "General",
+            "vars": [
+                "@theme_global-body-style",
+                "@global-background",
+                "@global-border",</code></pre></li>
+
+</ol>
+
+                            
+
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tm-footer">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="http://yootheme.com/themes/documentation?view=docs" rel="nofollow">英文文档</a></li>
+                    <li><a href="https://github.com/yootheme/docs" rel="nofollow">Github</a></li>
+                    <li><a href="https://twitter.com/getuikit" rel="nofollow">官方Twitter</a></li>
+                    <li><a href="http://weibo.com/getuikit" rel="nofollow">中文微博</a></li>
+                     
+                </ul>
+
+                <div class="uk-panel">
+                    <p>由<a href="http://www.getuikit.net/">UIkit中文网</a>翻译</p>
+                    <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tm-offcanvas" class="uk-offcanvas">
+
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
+                    <li ><a href="#">Warp 中文文档</a>
+                        
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
+                        <ul class="uk-nav-sub">
+<li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Joomla 模板设置 - Warp Framework 7 中文文档</title>
+        <meta name="description" content="学习如何使用Warp主题，如何用Warp开发主题，以及如何排除故障。学习如何设置基于Warp框架开发的Joomla模板。">
+        <meta name="author" content="UIkit中文网">
+        <meta name="keywords" content="Themes Warp framework,warp 7,joomla,模板">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.almost-flat.css">
+        <link rel="stylesheet" href="css/docs.css">
+        <link rel="stylesheet" href="css/highlight.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+    </head>
+
+    <body class="tm-background">
+
+        <nav class="tm-navbar uk-navbar uk-navbar-attached">
+            <div class="uk-container uk-container-center">
+
+                <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-active"><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
+                    <li><a href="File-structure.html">主题开发</a></li>
+                    <li><a href="Installation-issues.html">排除故障</a></li>
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+                <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+                <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+
+            </div>
+        </nav>
+
+        <div class="tm-middle">
+            <div class="uk-container uk-container-center">
+
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">
+
+                        <ul class="tm-nav uk-nav" data-uk-nav>
+
+                            <li class="uk-nav-header">开始使用</li>
+                            <li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                            <li class="uk-nav-header">开发者</li>
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                            
+                            <li class="uk-nav-header">排除故障</li>
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1>开始使用</h1>
+
+                            <p class="uk-article-lead">学习如何使用Warp主题，如何用Warp开发主题，以及如何排除故障。</p>
+
+                            <p>首先，你需要下载一份Warp主题。在 <a href="http://yootheme.com/themes/downloads/download" target="_blank" rel="nofollow">YOOtheme</a>的下载页面中，下载 <em>Master 2</em> 免费主题。在下载的ZIP压缩包内，包含最新的Warp主题框架。</p>
+
+                            <p><a class="uk-button uk-button-large uk-button-primary" href="http://yootheme.com/themes/downloads/download" rel="nofollow" target="_blank">下载 Warp</a></p>
+
+                            <hr class="uk-article-divider">
+
+                            
+<h1 class="title">设置 Joomla 模板</h1>
+
+<p class="article-lead"><span class="uk-badge">注意</span>本中文文档重点针对Wordpress主题，若有需要请联系站长翻译Joomla相关文档。<br/>This tutorial gives you a brief overview of the general Joomla! and Warp framework setup.</p>
+
+<h2>Installation</h2>
+
+<p>Setting up a Warp theme follows the standard Joomla installation procedure and works like with any other template.</p>
+
+<ol>
+  <li>Download Joomla from the <a href="http://www.joomla.org/">Joomla website</a>.</li>
+  <li>Setup a new Joomla install.</li>
+  <li>Install and activate your theme.</li>
+</ol>
+
+<p>For more information, take a look at the official <a href="http://docs.joomla.org/Main_Page" rel="nofollow">Joomla documentation</a>.</p>
+
+<h3>Setup a demo package</h3>
+
+<p>A demo package is a full Joomla installation, which includes the theme and sample data responsible for the layout and setup of our demo. This is great, if you don't want to start from scratch or just to have a peek at how everything is put together.</p>
+
+<p><span class="uk-badge">NOTE</span> On the last installation step don't forget to <em>Install the YOOtheme Sample Data</em> to import the demo content.</p>
+
+<h3>Troubleshooting</h3>
+
+<p>If the installation does not work and you get an error message, you might want to try installing the theme manually.</p>
+
+<ol>
+  <li>Extract the theme <code>.zip</code> file to a directory on your PC.</li>
+  <li>Using FTP, upload the theme directory to the <code>/tmp</code> folder of your Joomla installation on your webserver.</li>
+  <li>Go to the Joomla extensions installer and use the <em>Install from Directory</em> option to set the directory of your uploaded template files.</li>
+  <li>Hit the <em>Install</em> button and Joomla will install it from the stated directory.</li>
+</ol>
+
+<p>You can find further guidance on troubleshooting and PHP problems in the {doc: installation-issues-3 text: Installation issues} article.</p>
+
+<p><span class="uk-badge">NOTE</span> The Joomla error messages during installation can sometimes be misleading. For example, Joomla claims that it is unable to find the installation package, when it actually wasn't uploaded completely due to the <em>PHP Maximum Upload Size</em> limit.</p>
+
+<h2>Setup the menus</h2>
+
+<p>After <a href="http://docs.joomla.org/Adding_a_new_menu" rel="nofollow">creating your menu</a>, you need to assign it to a <em>menu</em> module published in the <code>menu</code> module position. To do so, just go to <em>Extensions &gt; Module Manager</em>, create a new <em>Menu</em> module and publish it in the <code>menu</code> position of the template.</p>
+
+<h3>Module in menu position</h3>
+
+<p>You can also publish any module in the <code>menu</code> position. The module name is used as menu item and the module content appears in the dropdown.</p>
+
+<h3>Menu styles</h3>
+
+<p>There are three different menu styles, the <em>Navbar and its mega dropdown</em> as a main menu, the <em>Navs with the accordion effect</em> in sidebars and the <em>Subnavs</em> in the toolbar or footer. Warp automatically styles the menu according to its module position.</p>
+
+<h2>Setup the logo</h2>
+
+<p>Setting up the logo in Joomla is pretty straightforward. Just create a <em>Custom HTML module</em> in the <code>logo</code> position. Now you can enter your markup in the <em>Custom output</em> field.</p>
+
+<p>For example use the following code:</p>
+
+<pre><code>&lt;img src&#61;"images/logo.png" width&#61;"200" height&#61;"50" alt&#61;"logo" /&gt;</code></pre>
+
+<p><span class="badge">NOTE</span> Warp 7 also provides the <code>logo-small</code> position, where you can display an alternative logo image for smaller viewport sizes.</p>
+                            
+                            
+                            
+                            
+
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tm-footer">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="http://yootheme.com/themes/documentation?view=docs" rel="nofollow">英文文档</a></li>
+                    <li><a href="https://github.com/yootheme/docs" rel="nofollow">Github</a></li>
+                    <li><a href="https://twitter.com/getuikit" rel="nofollow">官方Twitter</a></li>
+                    <li><a href="http://weibo.com/getuikit" rel="nofollow">中文微博</a></li>
+                     
+                </ul>
+
+                <div class="uk-panel">
+                    <p>由<a href="http://www.getuikit.net/">UIkit中文网</a>翻译</p>
+                    <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tm-offcanvas" class="uk-offcanvas">
+
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
+                    <li ><a href="#">Warp 中文文档</a>
+                        
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
+                        <ul class="uk-nav-sub">
+<li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                            <li><a href="How-to-update.html">如何更新</a></li>
+                            <li><a href="Theme-Settings.html">主题设置</a></li>
+                            <li><a href="Customizer.html">定制工具</a></li>
+                            <li><a href="Layout-Settings.html">布局设置</a></li>
+                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                            <li><a href="Menu-Settings.html">菜单设置</a></li>
+                            <li><a href="Theme-Information.html">主题信息</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="File-structure.html">文件结构</a></li>
+                            <li><a href="Theme-layout.html">主题布局</a></li>
+                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                            <li><a href="Customization.html">自定义</a></li>
+                            <li><a href="Config.html">Config.xml</a></li>
+                            <li><a href="Languages.html">语言</a></li>
+                            <li><a href="Error-Pages.html">错误页面</a></li>
+                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="Installation-issues.html">安装问题</a></li>
+                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                            <li><a href="FAQ.html">常见问题FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="http://www.getuikit.net" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
