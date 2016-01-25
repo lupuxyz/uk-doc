@@ -42,6 +42,7 @@
 
             // should be more efficient than using $win.scroll(checkscrollposition):
             UI.$doc.on('scrolling.uk.document', function(e, data) {
+                if (!data || !data.dir) return;
                 direction = data.dir.y;
                 checkscrollposition();
             });
@@ -52,7 +53,7 @@
 
                 for (var i = 0; i < sticked.length; i++) {
                     sticked[i].reset(true);
-                    sticked[i].self.computeWrapper();
+                    //sticked[i].self.computeWrapper();
                 }
 
                 checkscrollposition();
@@ -87,9 +88,9 @@
 
             if (boundary) {
 
-                if (boundary === true) {
+                if (boundary === true || boundary[0] === '!') {
 
-                    boundary      = this.wrapper.parent();
+                    boundary      = boundary === true ? this.wrapper.parent() : this.wrapper.closest(boundary.substr(1));
                     boundtoparent = true;
 
                 } else if (typeof boundary === "string") {
@@ -104,7 +105,7 @@
                 currentTop    : null,
                 wrapper       : this.wrapper,
                 init          : false,
-                getWidthFrom  : this.options.getWidthFrom || this.wrapper,
+                getWidthFrom  : UI.$(this.options.getWidthFrom || this.wrapper),
                 boundary      : boundary,
                 boundtoparent : boundtoparent,
                 top           : 0,
@@ -132,7 +133,8 @@
 
                     this.top = top;
                 },
-                reset         : function(force) {
+
+                reset: function(force) {
 
                     this.calcTop();
 
@@ -140,6 +142,7 @@
                         this.element.css({"position":"", "top":"", "width":"", "left":"", "margin":"0"});
                         this.element.removeClass([this.options.animation, 'uk-animation-reverse', this.options.clsactive].join(' '));
                         this.element.addClass(this.options.clsinactive);
+                        this.element.trigger('inactive.uk.sticky');
 
                         this.currentTop = null;
                         this.animate    = false;
@@ -233,6 +236,12 @@
                 'float'  : this.element.css('float') != 'none' ? this.element.css('float') : '',
                 'margin' : this.element.css('margin')
             });
+
+            if (this.element.css('position') == 'fixed') {
+                this.element.css({
+                    width: this.sticky.getWidthFrom.length ? this.sticky.getWidthFrom.width() : this.element.width()
+                });
+            }
         }
     });
 
@@ -290,10 +299,10 @@
                 if (sticky.currentTop != newTop) {
 
                     sticky.element.css({
-                        "position" : "fixed",
-                        "top"      : newTop,
-                        "width"    : (typeof sticky.getWidthFrom !== 'undefined') ? UI.$(sticky.getWidthFrom).width() : sticky.element.width(),
-                        "left"     : sticky.wrapper.offset().left
+                        position : "fixed",
+                        top      : newTop,
+                        width    : sticky.getWidthFrom.length ? sticky.getWidthFrom.width() : sticky.element.width(),
+                        left     : sticky.wrapper.offset().left
                     });
 
                     if (!sticky.init) {
@@ -330,6 +339,7 @@
                     }
 
                     sticky.element.addClass(sticky.options.clsactive).removeClass(sticky.options.clsinactive);
+                    sticky.element.trigger('active.uk.sticky');
                     sticky.element.css('margin', '');
 
                     if (sticky.options.animation && sticky.init && !UI.Utils.isInView(sticky.wrapper)) {

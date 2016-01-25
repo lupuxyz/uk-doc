@@ -104,7 +104,14 @@
 
                             var cover = UI.$('<div class="uk-cover-background uk-position-cover"></div>').css({'background-image':'url('+ media.attr('src') + ')'});
 
-                            media.css({'width': '100%','height': 'auto'});
+                            if (media.attr('width') && media.attr('height')) {
+                                placeholder = UI.$('<canvas></canvas>').attr({width:media.attr('width'), height:media.attr('height')});
+                                media.replaceWith(placeholder);
+                                media = placeholder;
+                                placeholder = undefined;
+                            }
+
+                            media.css({width: '100%',height: 'auto', opacity:0});
                             slide.prepend(cover).data('cover', cover);
                             break;
 
@@ -280,7 +287,7 @@
             var $this        = this,
                 current      = this.slides.eq(this.current),
                 next         = this.slides.eq(index),
-                dir          = direction ? direction : this.current < index ? -1 : 1,
+                dir          = direction ? direction : this.current < index ? 1 : -1,
                 currentmedia = current.data('media'),
                 animation    = Animations[this.options.animation] ? this.options.animation : 'fade',
                 nextmedia    = next.data('media'),
@@ -304,7 +311,7 @@
 
                     UI.Utils.checkDisplay(next, '[class*="uk-animation-"]:not(.uk-cover-background.uk-position-cover)');
 
-                    $this.trigger('show.uk.slideshow', [next]);
+                    $this.trigger('show.uk.slideshow', [next, current, $this]);
                 };
 
             $this.applyKenBurns(next);
@@ -316,6 +323,8 @@
 
             current = UI.$(current);
             next    = UI.$(next);
+
+            $this.trigger('beforeshow.uk.slideshow', [next, current, $this]);
 
             Animations[animation].apply(this, [current, next, dir]).then(finalize);
 
@@ -344,11 +353,11 @@
         },
 
         next: function() {
-            this.show(this.slides[this.current + 1] ? (this.current + 1) : 0);
+            this.show(this.slides[this.current + 1] ? (this.current + 1) : 0, 1);
         },
 
         previous: function() {
-            this.show(this.slides[this.current - 1] ? (this.current - 1) : (this.slides.length - 1));
+            this.show(this.slides[this.current - 1] ? (this.current - 1) : (this.slides.length - 1), -1);
         },
 
         start: function() {
@@ -434,14 +443,14 @@
 
             next.css('opacity', 1).one(UI.support.animation.end, function() {
 
-                current.removeClass(dir === 1 ? 'uk-slideshow-scroll-backward-out' : 'uk-slideshow-scroll-forward-out');
-                next.css('opacity', '').removeClass(dir === 1 ? 'uk-slideshow-scroll-backward-in' : 'uk-slideshow-scroll-forward-in');
+                current.removeClass(dir == -1 ? 'uk-slideshow-scroll-backward-out' : 'uk-slideshow-scroll-forward-out');
+                next.css('opacity', '').removeClass(dir == -1 ? 'uk-slideshow-scroll-backward-in' : 'uk-slideshow-scroll-forward-in');
                 d.resolve();
 
             }.bind(this));
 
-            current.addClass(dir == 1 ? 'uk-slideshow-scroll-backward-out' : 'uk-slideshow-scroll-forward-out');
-            next.addClass(dir == 1 ? 'uk-slideshow-scroll-backward-in' : 'uk-slideshow-scroll-forward-in');
+            current.addClass(dir == -1 ? 'uk-slideshow-scroll-backward-out' : 'uk-slideshow-scroll-forward-out');
+            next.addClass(dir == -1 ? 'uk-slideshow-scroll-backward-in' : 'uk-slideshow-scroll-forward-in');
             next.width(); // force redraw
 
             return d.promise();
@@ -456,14 +465,14 @@
 
             next.css('opacity', 1).one(UI.support.animation.end, function() {
 
-                current.removeClass(dir === 1 ? 'uk-slideshow-swipe-backward-out' : 'uk-slideshow-swipe-forward-out');
-                next.css('opacity', '').removeClass(dir === 1 ? 'uk-slideshow-swipe-backward-in' : 'uk-slideshow-swipe-forward-in');
+                current.removeClass(dir === -1 ? 'uk-slideshow-swipe-backward-out' : 'uk-slideshow-swipe-forward-out');
+                next.css('opacity', '').removeClass(dir === -1 ? 'uk-slideshow-swipe-backward-in' : 'uk-slideshow-swipe-forward-in');
                 d.resolve();
 
             }.bind(this));
 
-            current.addClass(dir == 1 ? 'uk-slideshow-swipe-backward-out' : 'uk-slideshow-swipe-forward-out');
-            next.addClass(dir == 1 ? 'uk-slideshow-swipe-backward-in' : 'uk-slideshow-swipe-forward-in');
+            current.addClass(dir == -1 ? 'uk-slideshow-swipe-backward-out' : 'uk-slideshow-swipe-forward-out');
+            next.addClass(dir == -1 ? 'uk-slideshow-swipe-backward-in' : 'uk-slideshow-swipe-forward-in');
             next.width(); // force redraw
 
             return d.promise();
@@ -500,6 +509,14 @@
             next.css('animation-duration', this.options.duration+'ms');
 
             next.css('opacity', 1);
+
+            // for plain text content slides - looks smoother
+            if (!(next.data('cover') || next.data('placeholder'))) {
+
+                next.css('opacity', 1).one(UI.support.animation.end, function() {
+                    next.removeClass('uk-slideshow-fade-in');
+                }).addClass('uk-slideshow-fade-in');
+            }
 
             current.one(UI.support.animation.end, function() {
 

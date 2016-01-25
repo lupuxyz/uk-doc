@@ -1,5 +1,79 @@
 # Changelog
 
+### 2.24.3 (December 18, 2015)
+
+  - Added support for using data-title attribute as lightbox caption
+  - Added mark first item in a row with ```uk-row-first``` when data-uk-grid-margin
+  - Added uk-slide-before uk-slide-after classes to slider element after item focus
+  - Added oncancel callback to UIkit.modal.confirm
+  - Updated allow params in data-uk-* attributes without curly braces
+  - Fixed .uk-display-inline-block with responsive child images (firefox)
+  - Fixed hash urls in Offcanvas
+  - Fixed slideshow scroll, swipe direction
+
+### 2.24.2 (December 01, 2015)
+
+  - Fixed UIkit.Utils.stackMargin apply on container with only one child element
+  - Fixed hiding dropdown on click with option `mode:'hover'` for dropdown or items with class `uk-dropdown-close`
+
+### 2.24.1 (November 30, 2015)
+
+  - Added uk-width-xlarge-* classes
+  - Updated slideshow direction animation (swipe, scroll)
+  - Updated scrollspynav to blur items first before activating
+  - Updated uk-overflow-container behaviour in modals
+  - Fixed sortable if browser is in strict mode
+  - Fixed sticked element width after resize
+  - Fixed parallax bg scrolling
+
+### 2.24.0 (November 23, 2015)
+
+  - Added active class to accordion content container
+  - Added panel body class to panel component
+  - Added modal blank class to modal component
+  - Added beforeshow.uk.slideshow event
+  - Added preventflip option to dropdown component
+  - Added uk-slideshow-fade-in class
+  - Added uk-contrast support for tabs component
+  - Added new hooks to base component
+  - Added base-noconflict
+  - Updated icon component to FontAwesome 4.5.0
+  - Updated parallax background-image behaviour
+  - Updated sticky behaviour on resize
+  - Updated default format setting to YYYY-MM-DD (datepicker)
+  - Updated scrollspynav to ignore links only with '#' as href
+  - Updated sortable js improved to allow nested groups
+  - Fixed error in grid filter if type is number
+  - Fixed uk-form-icon vertical alignment
+  - Fixed hover effects on touch devices
+  - Fixed slideset animation on mobile
+
+
+### 2.23.0 (October 12, 2015)
+
+  - DEPRECATED: uk-dropdown-up, uk-dropdown-flip, uk-dropdown-center (Use ```pos``` property instead)
+  - Reworked dropdown component to allow any kind of popovers
+  - Added column component
+  - Added data-uk-svg helper (UIkit.Utils.inlineSvg)
+  - Added ```pos``` option to dropdown component
+  - Added .npmignore
+  - Updated image background-size calculation in parallax component
+  - Updated using requestAnimationFrame for document.scrolling event
+  - Updated default pagination component values
+  - Fixed overlay transition-properties
+  - Fixed scroll jumping for animated switchers on iOS
+  - Fixed pass swiping option to switcher component
+  - Fixed slider not showing the last element
+  - Fixed ensure open transition has happened before listening to closing transition (modal component)
+  - Fixed initdate when mindate integer (datepicker component)
+  - Fixed error in sticky.js in combination with dynamic grid
+  - Fixed touch.js error
+
+  **Docs and Repo**
+
+  - Added docs and tests for column component
+  - Added docs and tests for dropdown component
+
 ### 2.22.0 (August 24, 2015)
 
   - Added dropdown overlay mode
@@ -7,7 +81,7 @@
   - Added animation duration variables to sticky
   - Added showup + clsinactive option to sticky component
   - Added swiping option to switcher component
-  - Updated icon component to FontAwesome to 4.4.0
+  - Updated icon component to FontAwesome 4.4.0
   - Updated placeholder default variables for all themes
   - Updated position utility classes
   - Updated sortable and nestable empty selectors
@@ -33,7 +107,7 @@
   **Docs and Repo**
 
   - Added new video tutorial section
-  - Updated some test and docs
+  - Updated some tests and docs
 
 ### 2.21.0 (June 01, 2015)
 

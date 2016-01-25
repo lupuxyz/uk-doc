@@ -24,11 +24,11 @@
 
             scrolltop = UI.$win.scrollTop();
 
-            window.requestAnimationFrame.apply(window, [function(){
+            window.requestAnimationFrame(function(){
                 for (var i=0; i < parallaxes.length; i++) {
                     parallaxes[i].process();
                 }
-            }]);
+            });
         };
 
 
@@ -184,7 +184,8 @@
 
         update: function(percent) {
 
-            var css        = {'transform':''},
+            var $this      = this,
+                css        = {'transform':''},
                 compercent = percent * (1 - (this.velocity - (this.velocity * percent))),
                 opts, val;
 
@@ -235,6 +236,12 @@
 
                     // bg image
                     case "bg":
+
+                        // don't move if image height is too small
+                        // if ($this.element.data('bgsize') && ($this.element.data('bgsize').h + val - window.innerHeight) < 0) {
+                        //     break;
+                        // }
+
                         css['background-position'] = '50% '+val+'px';
                         break;
                     case "bgp":
@@ -293,18 +300,29 @@
             h += extra;
             w += Math.ceil(extra * ratio);
 
+            if (w-extra > size.w && h < size.h) {
+                return obj.element.css({'background-size': ''});
+            }
+
             // if element height < parent height (gap underneath)
             if ((w / ratio) < h) {
+
                 width  = Math.ceil(h * ratio);
                 height = h;
 
+                if (h > window.innerHeight) {
+                    width  = width * 1.2;
+                    height = height * 1.2;
+                }
+
             // element width < parent width (gap to right)
             } else {
+
                 width  = w;
                 height = Math.ceil(w / ratio);
             }
 
-            obj.element.css({'background-size': (width+'px '+height+'px')});
+            element.css({'background-size': (width+'px '+height+'px')}).data('bgsize', {w:width,h:height});
         };
 
         img.onerror = function(){
@@ -312,7 +330,7 @@
         };
 
         img.onload = function(){
-            size  = {w:img.width, height:img.height};
+            size  = {w:img.width, h:img.height};
             ratio = img.width / img.height;
 
             UI.$win.on("load resize orientationchange", UI.Utils.debounce(function(){
