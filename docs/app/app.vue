@@ -18,12 +18,12 @@
 
                         <ul class="uk-navbar-nav uk-visible@m">
                             <li><a href="../pro">Pro</a></li>
-                            <li class="uk-active"><a href="./">Documentation</a></li>
-                            <li><a href="../changelog">Changelog</a></li>
+                            <li class="uk-active"><a href="./">中文文档</a></li>
+                            <li><a href="../changelog">更新记录</a></li>
                         </ul>
 
                         <div class="uk-navbar-item uk-visible@m">
-                            <a class="uk-button uk-button-default tm-button-default uk-icon" href="../download">Download <canvas uk-icon="icon: download" width="20" height="20"></canvas>
+                            <a class="uk-button uk-button-default tm-button-default uk-icon" href="../download">下载 <canvas uk-icon="icon: download" width="20" height="20"></canvas>
                             </a>
                         </div>
 
@@ -97,10 +97,10 @@
 
                     <ul class="uk-nav uk-nav-default tm-nav">
                         <li class="uk-nav-header">General</li>
-                        <li><a href="../index">Home</a></li>
+                        <li><a href="../index">首页</a></li>
                         <li><a href="../pro">Pro</a></li>
-                        <li><a href="../changelog">Changelog</a></li>
-                        <li><a href="../download">Download</a></li>
+                        <li><a href="../changelog">更新记录</a></li>
+                        <li><a href="../download">下载</a></li>
                     </ul>
 
                     <ul v-for="(pages, category) in navigation" class="uk-nav uk-nav-default tm-nav uk-margin-top">

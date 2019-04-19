@@ -10,10 +10,10 @@
 
                     <ul class="uk-nav uk-nav-default tm-nav">
                         <li class="uk-nav-header">General</li>
-                        <li><a href="./index">Home</a></li>
+                        <li><a href="./index">首页</a></li>
                         <li><a href="./pro">Pro</a></li>
-                        <li><a href="./changelog">Changelog</a></li>
-                        <li><a href="./download">Download</a></li>
+                        <li><a href="./changelog">更新记录</a></li>
+                        <li><a href="./download">下载</a></li>
                     </ul>
 
                     <ul v-for="(pages, category) in navigation" class="uk-nav uk-nav-default tm-nav uk-margin-top">

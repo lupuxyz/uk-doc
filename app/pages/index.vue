@@ -13,14 +13,14 @@
                     </p>
 
                     <p class="uk-margin-medium uk-text-lead">
-                        A lightweight and modular front-end framework<br class="uk-visible@s">
-                        for developing fast and powerful web interfaces.
+                        轻量级模块化的前端框架<br class="uk-visible@s">
+                        助你快速构建强大的 Web 界面
                     </p>
 
                     <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center" uk-grid>
                         <div>
-                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="./docs">Get Started</a>
-                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="./docs">Get Started</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="./docs">开始使用</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="./docs">开始使用</a>
                         </div>
                         <div>
                             <a class="uk-button uk-button-default tm-button-default uk-button-large tm-button-large uk-visible@s" href="https://github.com/uikit/uikit">Github</a>

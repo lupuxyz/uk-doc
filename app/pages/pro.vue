@@ -13,7 +13,7 @@
 
                             <div class="tm-intro-text uk-inline uk-width-xlarge">
                                 <h1 class="uk-h6 tm-h6 uk-margin-remove">YOOtheme Pro</h1>
-                                <h2 class="uk-h1 uk-margin-top uk-margin-medium-bottom">A theme and page builder for WordPress &amp; Joomla from the UIkit creators</h2>
+                                <h2 class="uk-h1 uk-margin-top uk-margin-medium-bottom">UIkit 开发者提供的用于构建 WordPress &amp; Joomla 主题页面的工具。</h2>
 
                                 <div class="uk-grid-medium uk-flex-middle uk-flex-inline" uk-grid>
                                     <div>

@@ -128,7 +128,7 @@
 
             setPage(page) {
 
-                document.title = `${this.$parent.page.split('-').map(ucfirst).join(' ')} - UIkit`;
+                document.title = `${this.$parent.page.split('-').map(ucfirst).join(' ')} - UIkit 中文网`;
 
                 html(this.$refs.container, page);
 

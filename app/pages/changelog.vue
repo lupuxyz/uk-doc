@@ -9,7 +9,7 @@
 
                 <div class="uk-card uk-card-default uk-card-body">
 
-                    <h1 class="uk-margin-medium uk-text-center">Changelog</h1>
+                    <h1 class="uk-margin-medium uk-text-center">更新记录</h1>
 
                     <div ref="changelog"></div>
 
