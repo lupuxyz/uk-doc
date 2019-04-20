@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Upload files through a file input form element or a placeholder area.</p>
 
-## Usage
+## 用法
 
 This JavaScript component utilizes the latest XMLHttpRequest Level 2 specification and provides the ability of uploading files via Ajax including tracking of the upload progress. The component provides two ways of uploading files: `select` and `drop`. While the `select` request can only be applied to `<input type="file">` elements, you can basically use any element with `drop`, which enables you to simply drag and drop files from your desktop into the specified element to upload them. Note that this component does not handle your file uploads on the server.
 
@@ -175,9 +175,9 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option             | Value    | Default                 | Description                                                 |
 |:-------------------|:---------|:------------------------|:------------------------------------------------------------|
@@ -210,17 +210,17 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.upload(element, options);
 ```
 
-### Events
+### 事件
 
-The following events will be triggered on elements with this component attached:
+以下事件将在此组件相关元素上触发：
 
 | Name | Description |
 | --- | --- |

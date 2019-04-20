@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Easily create nice looking lists, which come in different styles.</p>
 
-## Usage
+## 用法
 
 To apply this component, add the `.uk-list` class to an unordered or ordered list. The list will now display without any spacing or list-style.
 

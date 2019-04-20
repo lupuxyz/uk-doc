@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create layout boxes with different backgrounds that can be arranged seamlessly next to each other.</p>
 
-## Usage
+## 用法
 
 To apply this component, add the `.uk-tile` class to a `<div>` element. By default, a tile is blank. That is why it is important to add one of the following modifier classes for styling.
 

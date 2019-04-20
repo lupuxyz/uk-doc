@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Easily create nice looking forms with different styles and layouts.</p>
 
-## Usage
+## 用法
 
 Add one of the following classes to form controls inside a `<form>` element to define them.
 
@@ -507,9 +507,9 @@ You can add this option to the `uk-form-custom` attribute. [Learn more](javascri
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.formCustom(element, options);

@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create toggleable notifications that fade out automatically.</p>
 
-## Usage
+## 用法
 
 The notification will not fade out but remain visible when you hover the message until you stop hovering. You can also close the notification by clicking it. To show notifications, the component provides a simple JavaScript API. The following code snippet gets you started.
 
@@ -114,9 +114,9 @@ You can close all open notifications by calling `UIkit.notification.closeAll()`.
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option     | Value   | Default      | Description                                                         |
 |:-----------|:--------|:-------------|:--------------------------------------------------------------------|
@@ -130,9 +130,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 This is a `Functional Component` and may omit the element argument.
 
@@ -141,17 +141,17 @@ UIkit.notification(options);
 UIkit.notification(message, status);
 ```
 
-### Events
+### 事件
 
-The following events will be triggered on elements with this component attached:
+以下事件将在此组件相关元素上触发：
 
 | Name | Description |
 | --- | --- |
 | `close` | Fires after the notification has been closed. |
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### Close
 

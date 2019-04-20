@@ -6,7 +6,7 @@ A leader, also known as a dot leader or a tab leader, is a repeating pattern use
 
 ***
 
-## Usage
+## 用法
 
 To apply this component, add the `uk-leader` attribute to the element on the left. A line of characters, by default dots, will then fill the remaining space between the item and its adjacent element.
 
@@ -74,9 +74,9 @@ The table below lists the available settings of the `uk-leader` attribute. [Lear
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.leader(element, options);

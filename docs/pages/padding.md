@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">A collection of utility classes to add spacing between elements and their content.</p>
 
-## Usage
+## 用法
 
 To apply this component, add one of the following classes to a block element.
 

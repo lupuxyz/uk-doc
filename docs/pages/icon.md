@@ -6,7 +6,7 @@ UIkit comes with its own SVG icon system and a comprehensive library, which comp
 
 ***
 
-## Usage
+## 用法
 
 Make sure to include the icon library script, for more details see the [installation instructions](installation.md).
 
@@ -341,9 +341,9 @@ You can also make any background image scale to the size of an icon. Just add th
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option  | Value  | Default | Description          |
 |:--------|:-------|:--------|:---------------------|
@@ -360,9 +360,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.icon(element, options);

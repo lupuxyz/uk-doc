@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Easily create a nice looking pagination to navigate through pages.</p>
 
-## Usage
+## 用法
 
 The Pagination component consists of button-like styled links, that are aligned side by side in a horizontal list.
 

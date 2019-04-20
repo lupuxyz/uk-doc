@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Inverse the style of any component for light or dark backgrounds.</p>
 
-## Usage
+## 用法
 
 Add the `.uk-light` class to improve the visibility of objects on dark backgrounds in a light style. When using a dark style, add the `.uk-dark` class to elements on a light background.
 

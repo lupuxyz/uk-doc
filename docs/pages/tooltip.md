@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Easily create a nice looking tooltip.</p>
 
-## Usage
+## 用法
 
 To apply this component, add the `uk-tooltip` attribute to an element. You also need to add the `title: TEXT` option to the attribute, whose value will represent your tooltip's text.
 
@@ -70,9 +70,9 @@ If you want the tooltip to appear with a little delay, just add the `delay` opti
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option      | Value  | Default                 | Description                                                                       |
 |:------------|:-------|:------------------------|:----------------------------------------------------------------------------------|
@@ -94,17 +94,17 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.tooltip(element, options);
 ```
 
-### Events
+### 事件
 
-The following events will be triggered on elements, which are injected by this component:
+以下事件将在由此组件注入的元素上触发：
 
 | Name         | Description                                                              |
 |:-------------|:-------------------------------------------------------------------------|
@@ -123,9 +123,9 @@ UIkit.util.on(document, 'show', '.uk-tooltip.uk-active', function() {
 });
 ```
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### Show
 

@@ -29,8 +29,8 @@ export function parse(markdown, cb) {
         return `<div class="uk-position-relative uk-margin-medium">
 
                     <ul uk-tab="swiping: false">
-                        <li><a href="#">Preview</a></li>
-                        <li><a href="#">Markup</a></li>
+                        <li><a href="#">预览</a></li>
+                        <li><a href="#">代码</a></li>
                     </ul>
 
                     <ul class="uk-switcher uk-margin">
@@ -40,7 +40,7 @@ export function parse(markdown, cb) {
 
                     <div class="uk-position-top-right uk-margin-small-top">
                         <ul class="uk-iconnav">
-                            <li><a class="js-copy" uk-tooltip="Copy to Clipboard" rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
+                            <li><a class="js-copy" uk-tooltip="复制到剪贴板" rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
                             <li><a class="js-codepen" uk-tooltip="Edit on Codepen" rel="#${id}"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
                         </ul>
                     </div>

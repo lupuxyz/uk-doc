@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Includes styles for comments, for example for a blog section on your site.</p>
 
-## Usage
+## 用法
 
 The Comment component consists of the comment itself, a comment header, including an avatar, a title and meta data, and a comment body.
 

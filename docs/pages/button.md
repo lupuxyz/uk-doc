@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Easily create nice looking buttons, which come in different styles.</p>
 
-## Usage
+## 用法
 
 To apply this component, add the `.uk-button` class and a modifier such as `.uk-button-default` to an `<a>` or `<button>` element. Add the `disabled` attribute to a `<button>` element to disable the button.
 
@@ -26,9 +26,9 @@ To apply this component, add the `.uk-button` class and a modifier such as `.uk-
 
 ***
 
-## Style modifiers
+## 样式修改
 
-There are several style modifiers available. Just add one of the following classes to apply a different look.
+添加以下样式修改 class 使其呈现不同的外观风格：
 
 | Class                  | Description                                    |
 |:-----------------------|:-----------------------------------------------|

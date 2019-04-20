@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a close icon that can be combined with different components.</p>
 
-## Usage
+## 用法
 
 To apply this component, add the `uk-close` attribute to an `<a>` or `<button>` element.
 

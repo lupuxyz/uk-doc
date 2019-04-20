@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Easily create nice looking tables, which come in different styles.</p>
 
-## Usage
+## 用法
 
 To apply this component, add the `.uk-table` class to a `<table>` element.
 

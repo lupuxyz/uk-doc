@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create articles within your page.</p>
 
-## Usage
+## 用法
 
 The article component consists of the article itself, a title and meta data.
 

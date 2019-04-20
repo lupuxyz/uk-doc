@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">A collection of utility classes to position content.</p>
 
-## Usage
+## 用法
 
 To apply this component, add one of the `.uk-position-*` classes to a block element. When using this component to place content on top of an image, add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around the image and the element to create a position context.
 

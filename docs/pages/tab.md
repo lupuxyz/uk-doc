@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a tabbed navigation with different styles.</p>
 
-## Usage
+## 用法
 
 The tab component consists of clickable tabs, that are aligned side by side in a list. Its JavaScript functionality extends the [Switcher component](switcher.md) and is necessary to dynamically transition through different contents using the tabbed navigation.
 
@@ -173,9 +173,9 @@ Tabs can be used to trigger a dropdown menu from the [Dropdown component](dropdo
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option      | Value           | Default | Description                                                                                               |
 |:------------|:----------------|:--------|:----------------------------------------------------------------------------------------------------------|
@@ -191,9 +191,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.tab(element, options);
@@ -212,9 +212,9 @@ The following events will be triggered on the connected items of the elements wi
 | `hide`       | Fires after an item's hide animation has started.                        |
 | `hidden`     | Fires after an item is hidden.                                           |
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### Show
 

@@ -10,7 +10,7 @@ For example, the [Slideshow](slideshow.md#videos), [Lightbox](lightbox.md#conten
 
 ***
 
-## Usage
+## 用法
 
 To apply this component, add the `uk-video` attribute to a `<video>` element. The video will be paused whenever it's hidden with CSS and resume once it becomes visible again.
 
@@ -77,9 +77,9 @@ The table below lists the available settings of the `uk-video` attribute. [Learn
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.video(element, options);

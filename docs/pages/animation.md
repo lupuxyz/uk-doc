@@ -1,21 +1,21 @@
-# Animation
+# 动画
 
-<p class="uk-text-lead">A collection of smooth animations to use within your page.</p>
+<p class="uk-text-lead">用在网页上的一系列流畅的动画。 </p>
 
-## Usage
+## 用法
 
-Add one of the `.uk-animation-*` classes to any element. The animation is shown when the class is added, so usually immediately on page load. To show the animation at another point, for example when the element enters the viewport, you would add the class using JavaScript — with the [Scrollspy component](scrollspy.md) for instance. This is what happens in many of UIkit's components that make use of animations. All animations themselves are implemented with CSS, so they do not require JavaScript to play.
+在任意元素上 添加 `.uk-animation-*` class。动画在 Class 被添加时就会显示，所以通常会在页面加载时即刻生效。想要实现在其他情况下显示动画，例如在元素进入视口时，你需要使用 JavaScript 来添加动画的 class —— 比如使用 [滚动监听组件](scrollspy.md) 。这是 UIkit 的多数组件使用动画的方式。所有动画本身都是用 CSS 实现的，不需要使用 JavaScript来播放。
 
 | Class                                                   | Description                                          |
 |:--------------------------------------------------------|:-----------------------------------------------------|
-| `.uk-animation-fade`                                    | The element fades in.                                |
-| `.uk-animation-scale-up`<br> `.uk-animation-scale-down` | The element fades in and scales up or down.          |
-| `.uk-animation-slide-top`<br> `.uk-animation-slide-bottom`  `.uk-animation-slide-left`<br> `.uk-animation-slide-right` | The element fades and slides in from the top, bottom, left or right by its own height or width. |
-| `.uk-animation-slide-top-small`<br> `.uk-animation-slide-bottom-small`   `.uk-animation-slide-left-small`<br> `.uk-animation-slide-right-small` | The element fades and slides in from the top, bottom, left or right with a smaller distance which is specified by a fixed pixel value. |
-| `.uk-animation-slide-top-medium`<br> `.uk-animation-slide-bottom-medium`  `.uk-animation-slide-left-medium`<br> `.uk-animation-slide-right-medium` | The element fades and slides in from the top, bottom, left or right with a medium distance which is specified by a fixed pixel value. |
-| `.uk-animation-kenburns`                                | The element scales very slowly up without fading in. |
-| `.uk-animation-shake`                                   | The element shakes.                                  |
-| `.uk-animation-stroke`                                  | The SVG element strokes are drawn.                   |
+| `.uk-animation-fade`                                    | 元素的淡入效果                                |
+| `.uk-animation-scale-up`<br> `.uk-animation-scale-down` | 元素的缩放效果          |
+| `.uk-animation-slide-top`<br> `.uk-animation-slide-bottom`  `.uk-animation-slide-left`<br> `.uk-animation-slide-right` | 元素基于它的高度或宽度从顶部、底部、左侧或右侧淡入并滑入。 |
+| `.uk-animation-slide-top-small`<br> `.uk-animation-slide-bottom-small`   `.uk-animation-slide-left-small`<br> `.uk-animation-slide-right-small` | 元素从顶部、底部、左侧或右侧淡入并滑入，并带有固定像素值的较小距离。 |
+| `.uk-animation-slide-top-medium`<br> `.uk-animation-slide-bottom-medium`  `.uk-animation-slide-left-medium`<br> `.uk-animation-slide-right-medium` | 元素从顶部、底部、左侧或右侧淡入并滑入，并带有固定像素值的中等距离。 |
+| `.uk-animation-kenburns`                                | 元素不带淡入效果缓慢地缩放 |
+| `.uk-animation-shake`                                   | 元素抖动                                  |
+| `.uk-animation-stroke`                                  | SVG 的笔触绘图效果                   |
 
 To toggle an animation on hover or focus, add the `.uk-animation-toggle` class to a parent element. Also add `tabindex="0"` to make the animation focusable through keyboard navigation and on touch devices.
 
@@ -112,9 +112,9 @@ To toggle an animation on hover or focus, add the `.uk-animation-toggle` class t
 
 ***
 
-## Reverse modifier
+## 反向动画
 
-By default, all animations are incoming. To reverse any animation, add the `.uk-animation-reverse` class.
+默认地，所有动画都是元素出现的效果。要把动画反向，比如元素消失的效果，添加  `.uk-animation-reverse` class 。
 
 ```html
 <div class="uk-animation-fade uk-animation-reverse"></div>
@@ -207,9 +207,9 @@ By default, all animations are incoming. To reverse any animation, add the `.uk-
 
 ***
 
-## Fast modifier
+## 快速动画
 
-To play animations at a faster speed, add the `.uk-animation-fast` class to the element.
+要以更快的速度播放动画，添加 `.uk-animation-fast` class 到元素。
 
 ```html
 <div class="uk-animation-fade uk-animation-fast"></div>
@@ -228,9 +228,9 @@ To play animations at a faster speed, add the `.uk-animation-fast` class to the 
 
 ***
 
-## Origin modifiers
+## 动画起点
 
-By default, scaling animations originate from the center. To modify this behavior, add one of the `.uk-transform-origin-*` classes from the [Utility component](utility.md#transform-origin).
+默认情况下，缩放动画的源头是中间。修改这个行为，添加一个[实用效果组件](utility.md#transform-origin) 中的 `.uk-transform-origin-*` class。
 
 ```html
 <div class="uk-animation-scale-up uk-transform-origin-bottom-right"></div>
@@ -260,7 +260,7 @@ By default, scaling animations originate from the center. To modify this behavio
 
 ## Ken Burns
 
-To add a simple Ken Burns effect, add the `.uk-animation-kenburns` class to any image. You can also apply the `.uk-animation-reverse` or one of the `.uk-transform-origin-*` classes from the [Utility component](utility.md#transform-origin) to modify the effect.
+添加简单的 Ken Burns 效果，需要为图片添加 `.uk-animation-kenburns` class。还可以使用  `.uk-animation-reverse` 或 `.uk-transform-origin-*` classe 来修改效果。
 
 ```html
 <img class="uk-animation-kenburns" src="" alt="">
@@ -287,9 +287,9 @@ By default the animation starts on page load. In this example we used the [Scrol
 
 ## SVG Strokes
 
-The Animation component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or using the [SVG component](svg.md).
+动画组件可以用于 SVG 绘制动画。这个效果看起来就像在你眼前绘制 SVG 一样。SVG 图片是以行内 SVG 的形式注入到标签内的。可以手动操作，或者使用 [SVG 组件](svg.md)。
 
-The following example shows how to add the inline SVG manually. Since you have to know the exact length of the stroke, UIkit requires you to set the length in the custom property `--uk-animation-stroke`. In this example the stroke length is `46`.
+下面的例子为你展示如何手动添加行内 SVG。The following example shows how to add the inline SVG manually. Since you have to know the exact length of the stroke, UIkit requires you to set the length in the custom property `--uk-animation-stroke`. In this example the stroke length is `46`.
 
 ```html
 <svg class="uk-animation-stroke" style="--uk-animation-stroke: 46;" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

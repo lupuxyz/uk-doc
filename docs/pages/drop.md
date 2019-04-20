@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Position any element in relation to another element.</p>
 
-## Usage
+## 用法
 
 Any content, like a button, can toggle the drop component. Just add the `uk-drop` attribute to a block element following the toggle.
 
@@ -212,9 +212,9 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option           | Value           | Default        | Description                                                                                        |
 |:-----------------|:----------------|:---------------|:---------------------------------------------------------------------------------------------------|
@@ -240,17 +240,17 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.drop(element, options);
 ```
 
-### Events
+### 事件
 
-The following events will be triggered on elements with this component attached:
+以下事件将在此组件相关元素上触发：
 
 | Name         | Description                                                              |
 |:-------------|:-------------------------------------------------------------------------|
@@ -263,9 +263,9 @@ The following events will be triggered on elements with this component attached:
 | `hidden`     | Fires after an item is hidden.                                           |
 | `stack`      | Fires when the `drop-stack`class is applied.                             |
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### Show
 

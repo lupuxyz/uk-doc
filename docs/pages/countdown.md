@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a simple countdown timer.</p>
 
-## Usage
+## 用法
 
 To apply this component, add the `uk-countdown` attribute to a container element and define a date when the countdown should expire. Just add `date: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `2017-12-04T22:00:00+00:00` (UTC time).
 
@@ -131,17 +131,17 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.countdown(element, options);
 ```
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### Start
 

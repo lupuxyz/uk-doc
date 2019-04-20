@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Display your content in multiple text columns without having to split it in several containers.</p>
 
-## Usage
+## 用法
 
 Add one of the `.uk-column-*` classes to an element to display its inline content in multiple columns.
 
@@ -36,10 +36,10 @@ UIkit provides a number of responsive column classes. Basically they work just l
 
 | Class                                      | Description                                        |
 |:-------------------------------------------|:---------------------------------------------------|
-| `.uk-column-1-2@s` to `.uk-column-1-6@s`   | Only affects device widths of _640px_ and higher.  |
-| `.uk-column-1-2@m` to `.uk-column-1-6@m`   | Only affects device widths of _960px_ and higher.  |
-| `.uk-column-1-2@l` to `.uk-column-1-6@l`   | Only affects device widths of _1200px_ and higher. |
-| `.uk-column-1-2@xl` to `.uk-column-1-6@xl` | Only affects device widths of _1600px_ and higher. |
+| `.uk-column-1-2@s` to `.uk-column-1-6@s`   | 仅作用于宽度在 _640px_ 以上的设备  |
+| `.uk-column-1-2@m` to `.uk-column-1-6@m`   | 仅作用于宽度在 _960px_ 以上的设备  |
+| `.uk-column-1-2@l` to `.uk-column-1-6@l`   | 仅作用于宽度在 _1200px_ 以上的设备 |
+| `.uk-column-1-2@xl` to `.uk-column-1-6@xl` | 仅作用于宽度在 _1600px_ 以上的设备 |
 
 ```html
 <div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-4@l"></div>

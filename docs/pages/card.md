@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create layout boxes with different styles.</p>
 
-## Usage
+## 用法
 
 The Card component consists of the card itself, the card body and an optional card title. Typically, cards are arranged in grid columns from the [Grid component](grid.md).
 

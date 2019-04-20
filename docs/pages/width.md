@@ -6,7 +6,7 @@ UIkit's Width component is often used in combination with [grids](grid.md) to sp
 
 ***
 
-## Usage
+## 用法
 
 Add one of the `.uk-width-*` classes to an element to determine its size. Typically, you would use a grid from the [Grid component](grid.md) and its child elements to create the units.
 

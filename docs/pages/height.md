@@ -6,7 +6,7 @@ UIkit's Height component offers three options to set heights: using simple fixed
 
 ***
 
-## Usage
+## 用法
 
 UIkit provides a number of useful classes to alter an element's height.
 
@@ -153,9 +153,9 @@ The table below lists the available settings of the `uk-height-match` attribute.
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.heightMatch(element, options);

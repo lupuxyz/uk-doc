@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Easily create nice looking notification badges.</p>
 
-## Usage
+## 用法
 
 To create a badge, just add the `.uk-badge` class to an inline element like `<a>` or `<span>` element.
 

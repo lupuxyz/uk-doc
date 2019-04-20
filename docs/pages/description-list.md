@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Easily create nice looking description lists, which come in different styles.</p>
 
-## Usage
+## 用法
 
 Add the `.uk-description-list` class to display terms and descriptions below each other.
 

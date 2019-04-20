@@ -6,7 +6,7 @@ The RTL version switches the orientation of UIkit design elements, including pro
 
 ***
 
-## Usage
+## 用法
 
 To use UIkit in RTL mode, use `uikit.rtl.min.css` which is included in the `dist/` folder. Make sure to add the `dir="rtl"` attribute to the `<html>` tag of your website. The JavaScript supports RTL by default, so you can include the regular JS files without changing anything.
 

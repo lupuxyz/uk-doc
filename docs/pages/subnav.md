@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Defines different styles for a sub navigation.</p>
 
-## Usage
+## 用法
 
 To apply this component, use the following classes. To align a subnav, for example to horizontally center it, you can use the [Flex component](flex.md).
 

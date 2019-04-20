@@ -6,7 +6,7 @@ The Flex component has an essential role in building layouts in UIkit. A lot of 
 
 ***
 
-## Usage
+## 用法
 
 To apply the flexbox layout model, use one of the following classes. By default, all flex items are aligned to the left, as wide as their content and matched in height.
 
@@ -65,10 +65,10 @@ UIkit provides a number of responsive flex classes for horizontal alignment. Bas
 
 | Class | Description |
 |:------|:------------|
-| `.uk-flex-left@s`<br> `.uk-flex-center@s`<br> `.uk-flex-right@s`<br> `.uk-flex-between@s`<br> `.uk-flex-around@s` | Only affects device widths of _640px_ and higher. |
-| `.uk-flex-left@m`<br> `.uk-flex-center@m`<br> `.uk-flex-right@m`<br> `.uk-flex-between@m`<br> `.uk-flex-around@m` | Only affects device widths of _960px_ and higher. |
-| `.uk-flex-left@l`<br> `.uk-flex-center@l`<br> `.uk-flex-right@l`<br> `.uk-flex-between@l`<br> `.uk-flex-around@l` | Only affects device widths of _1200px_ and higher. |
-| `.uk-flex-left@xl`<br> `.uk-flex-center@xl`<br> `.uk-flex-right@xl`<br> `.uk-flex-between@xl`<br> `.uk-flex-around@xl` | Only affects device widths of _1600px_ and higher. |
+| `.uk-flex-left@s`<br> `.uk-flex-center@s`<br> `.uk-flex-right@s`<br> `.uk-flex-between@s`<br> `.uk-flex-around@s` | 仅作用于宽度在 _640px_ 以上的设备 |
+| `.uk-flex-left@m`<br> `.uk-flex-center@m`<br> `.uk-flex-right@m`<br> `.uk-flex-between@m`<br> `.uk-flex-around@m` | 仅作用于宽度在 _960px_ 以上的设备 |
+| `.uk-flex-left@l`<br> `.uk-flex-center@l`<br> `.uk-flex-right@l`<br> `.uk-flex-between@l`<br> `.uk-flex-around@l` | 仅作用于宽度在 _1200px_ 以上的设备 |
+| `.uk-flex-left@xl`<br> `.uk-flex-center@xl`<br> `.uk-flex-right@xl`<br> `.uk-flex-between@xl`<br> `.uk-flex-around@xl` | 仅作用于宽度在 _1600px_ 以上的设备 |
 
 ```html
 <div class="uk-flex uk-flex-center@m uk-flex-right@l">
@@ -183,10 +183,10 @@ By default, flex items are laid out according to the source order. To display a 
 |:-------------------------------------------|:----------------------------------------------|
 | `.uk-flex-first`                           | Displays the item as the first one.           |
 | `.uk-flex-last`                            | Displays the item as the last one.            |
-| `.uk-flex-first@s`<br> `.uk-flex-last@s`   | Affects device widths of _640px_ and higher.  |
-| `.uk-flex-first@m`<br> `.uk-flex-last@m`   | Affects device widths of _960px_ and higher.  |
-| `.uk-flex-first@l`<br> `.uk-flex-last@l`   | Affects device widths of _1200px_ and higher. |
-| `.uk-flex-first@xl`<br> `.uk-flex-last@xl` | Affects device widths of _1600px_ and higher. |
+| `.uk-flex-first@s`<br> `.uk-flex-last@s`   | Affects device widths of _640px_ 以上的设备  |
+| `.uk-flex-first@m`<br> `.uk-flex-last@m`   | Affects device widths of _960px_ 以上的设备  |
+| `.uk-flex-first@l`<br> `.uk-flex-last@l`   | Affects device widths of _1200px_ 以上的设备 |
+| `.uk-flex-first@xl`<br> `.uk-flex-last@xl` | Affects device widths of _1600px_ 以上的设备 |
 
 ```html
 <div class="uk-flex">

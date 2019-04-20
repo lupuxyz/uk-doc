@@ -34,7 +34,7 @@ You can also run the migration tool by loading the needed JavaScript on your web
 
 ***
 
-## Usage
+## 用法
 
 To start the migration, replace the UIkit 2 files of your website with their UIkit 3 equivalents (both JS and CSS) and run the migration tool using one of the solutions listed above. To learn how to change your markup, open the developer console of your browser. Your see a list of warnings and notices that tell you what to change. You can click the arrows next to any message to see more details about the necessary changes.
 

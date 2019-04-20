@@ -6,7 +6,7 @@ SVGs or Scalable Vector Graphics are really handy, for example to display a logo
 
 ***
 
-## Usage
+## 用法
 
 To apply this component, add the `uk-svg` attribute to an `<img>` element.
 
@@ -36,9 +36,9 @@ There are two ways to animate SVG strokes. First by using the [Animation compone
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option             | Value   | Default | Description                                                                                                   |
 | :----------------- | :------ | :------ | :------------------------------------------------------------------------------------------------------------ |
@@ -49,9 +49,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.svg(element, options);

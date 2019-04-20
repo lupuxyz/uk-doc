@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a dot navigation to operate slideshows or to scroll to different page sections.</p>
 
-## Usage
+## 用法
 
 To create a navigation with dots, use the following classes. This component is built with Flexbox. So to align a dotnav, you can use [Flex component](flex.md).
 

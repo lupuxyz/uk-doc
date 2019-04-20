@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Expand images, videos or iframes to cover their entire container and place your own content on top.</p>
 
-## Usage
+## 用法
 
 To have an image cover its parent element, add the `.uk-cover-container` class to the parent and the `uk-cover` attribute to the image.
 
@@ -95,9 +95,9 @@ Adding the `uk-height-viewport` attribute from the [Height component](height.md#
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option     | Value   | Default   | Description                           |
 |:-----------|:--------|:----------|:--------------------------------------|
@@ -109,9 +109,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.cover(element, options);

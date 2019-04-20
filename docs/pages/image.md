@@ -13,7 +13,7 @@ The Image components supports the `img` element and the CSS `background-image` p
 
 ***
 
-## Usage
+## 用法
 
 To apply this component, add the `uk-img` attribute to an `<img>` element and add the `data-` prefix to the `src` attribute so that it reads `data-src`.
 
@@ -185,9 +185,9 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option       | Value  | Default | Description                                                                                                                    |
 |:-------------|:-------|:--------|:-------------------------------------------------------------------------------------------------------------------------------|
@@ -204,9 +204,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.img(element, options);

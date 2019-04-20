@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Scroll smoothly when jumping to different sections on a page.</p>
 
-## Usage
+## 用法
 
 Simply add the `uk-scroll` attribute to any page-internal link that contains a URL fragment to add the smooth scrolling behavior.
 
@@ -42,9 +42,9 @@ UIkit.util.on('#scroll-trigger', 'scrolled', function () {
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option     | Value  | Default | Description                         |
 |:-----------|:-------|:--------|:------------------------------------|
@@ -53,9 +53,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.scroll(element, options);
@@ -65,9 +65,9 @@ UIkit.scroll(element, options);
 
 <a id="target" class="uk-button uk-button-primary" href="#top" uk-scroll>Scroll up</a>
 
-### Events
+### 事件
 
-The following events will be triggered on elements with this component attached:
+以下事件将在此组件相关元素上触发：
 
 | Name           | Description                                                             |
 |:---------------|:------------------------------------------------------------------------|
@@ -75,9 +75,9 @@ The following events will be triggered on elements with this component attached:
 | `scrolled`     | Fires after scrolling is finished.                                      |
 
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### ScrollTo
 

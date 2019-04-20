@@ -18,7 +18,7 @@
     "组件": {
 
         "手风琴 Accordion": "accordion",
-        "警示框 Alert": "alert",
+        "提示框 Alert": "alert",
         "对齐 Align": "align",
         "动画 Animation": "animation",
         "文章 Article": "article",
@@ -92,7 +92,7 @@
         "回到顶部 Totop": "totop",
         "过渡 Transition": "transition",
         "上传 Upload": "upload",
-        "通用效果 Utility": "utility",
+        "实用效果 Utility": "utility",
         "视频 Video": "video",
         "可见性 Visibility": "visibility",
         "宽度 Width": "width"

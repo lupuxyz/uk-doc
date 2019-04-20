@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Use responsive visibility classes to display or hide elements on different devices.</p>
 
-## Usage
+## 用法
 
 Add one of these classes to hide an element.
 
@@ -29,10 +29,10 @@ Add one of the `.uk-hidden-*` classes to hide the element from screens larger th
 
 | Class          | Description                                        |
 |:---------------|:---------------------------------------------------|
-| `uk-hidden@s`  | Only affects device widths of _640px_ and larger.  |
-| `uk-hidden@m`  | Only affects device widths of _960px_ and larger.  |
-| `uk-hidden@l`  | Only affects device widths of _1200px_ and larger. |
-| `uk-hidden@xl` | Only affects device widths of _1600px_ and larger. |
+| `uk-hidden@s`  | 仅作用于宽度在 _640px_ and larger.  |
+| `uk-hidden@m`  | 仅作用于宽度在 _960px_ and larger.  |
+| `uk-hidden@l`  | 仅作用于宽度在 _1200px_ and larger. |
+| `uk-hidden@xl` | 仅作用于宽度在 _1600px_ and larger. |
 
 ```html
 <!-- Hidden on tablets and larger -->
@@ -78,10 +78,10 @@ Use `.uk-visible-*` classes to show the element for screens larger than the spec
 
 | Class           | Description                                        |
 |:----------------|:---------------------------------------------------|
-| `uk-visible@s`  | Only affects device widths of _640px_ and larger.  |
-| `uk-visible@m`  | Only affects device widths of _960px_ and larger.  |
-| `uk-visible@l`  | Only affects device widths of _1200px_ and larger. |
-| `uk-visible@xl` | Only affects device widths of _1600px_ and larger. |
+| `uk-visible@s`  | 仅作用于宽度在 _640px_ and larger.  |
+| `uk-visible@m`  | 仅作用于宽度在 _960px_ and larger.  |
+| `uk-visible@l`  | 仅作用于宽度在 _1200px_ and larger. |
+| `uk-visible@xl` | 仅作用于宽度在 _1600px_ and larger. |
 
 ```html
 <!-- Visible on tablets and larger -->

@@ -1,10 +1,10 @@
-# Alert
+# 提示框
 
-<p class="uk-text-lead">Display success, warning and error messages.</p>
+<p class="uk-text-lead">显示成功、警告、错误类信息。 </p>
 
-## Usage
+## 用法 
 
-To apply this component, add the `uk-alert` attribute to a block element.
+在块级元素上添加 `uk-alert` 属性即可使用。
 
 ```html
 <div uk-alert></div>
@@ -16,9 +16,9 @@ To apply this component, add the `uk-alert` attribute to a block element.
 
 ***
 
-## Close button
+## 关闭按钮
 
-To create a close button and enable its functionality, add the `.uk-alert-close` class to a `<button>` or `<a>` element inside the alert box. To apply a close icon, add the `uk-close` attribute from the [Close component](close.md).
+提示框内部的 `<button>` 或 `<a>` 元素上添加 `.uk-alert-close` class，即可创建一个关闭按钮，并启用其功能。再添加一个 [关闭组件](close.md) 中的 `uk-close` 属性来实现关闭图标。
 
 ```html
 <div uk-alert>
@@ -36,16 +36,16 @@ To create a close button and enable its functionality, add the `.uk-alert-close`
 
 ***
 
-## Style modifiers
+## 样式修改
 
-There are several style modifiers available. Just add one of the following classes to apply a different look.
+添加以下样式修改 class 使其呈现不同的外观风格：
 
 | Class               | Description                               |
 |:--------------------|:------------------------------------------|
-| `.uk-alert-primary` | Give the message a prominent styling.     |
-| `.uk-alert-success` | Indicates success or a positive message.  |
-| `.uk-alert-warning` | Indicates a message containing a warning. |
-| `.uk-alert-danger`  | Indicates an important or error message.  |
+| `.uk-alert-primary` | 为信息添加主色调样式     |
+| `.uk-alert-success` | 表示成功或积极的信息  |
+| `.uk-alert-warning` | 表示包含警告的信息 |
+| `.uk-alert-danger`  | 表示重要或错误的信息  |
 
 ```example
 <div class="uk-alert-primary" uk-alert>
@@ -71,17 +71,17 @@ There are several style modifiers available. Just add one of the following class
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option      | Value           | Default           | Description                                              |
 |:------------|:----------------|:------------------|:---------------------------------------------------------|
-| `animation` | Boolean, String | `true`            | Fade out or use the [Animation component](animation.md). |
-| `duration`  | Number          | `150`             | Animation duration in milliseconds.                      |
-| `sel-close` | CSS selector    | `.uk-alert-close` | The close trigger element.                               |
+| `animation` | Boolean, String | `true`            | 淡出效果，或者使用[动画组件](animation.md). |
+| `duration`  | Number          | `150`             | 以毫秒计时的动画持续时间                     |
+| `sel-close` | CSS selector    | `.uk-alert-close` | 触发关闭的元素                               |
 
-`animation` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+`animation` 是 _主要_ 选项，作为属性中的唯一选项时，可以省略其名称：
 
 ```html
 <span uk-toggle=".my-class"></span>
@@ -91,26 +91,26 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.alert(element, options);
 ```
 
-### Events
+### 事件
 
-The following events will be triggered on elements with this component attached:
+以下事件将在此组件相关元素上触发：
 
 | Name         | Description                                                              |
 |:-------------|:-------------------------------------------------------------------------|
-| `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide`       | Fires after an item is hidden.                                           |
+| `beforehide` | 在条目被隐藏前触发。可以通过返回 `false` 来阻止显示。 |
+| `hide`       | 在条目被隐藏后触发。                                          |
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### Close
 
@@ -118,4 +118,4 @@ The following methods are available for the component:
 UIkit.alert(element).close();
 ```
 
-Closes and removes the Alert.
+关闭并移除提示框。

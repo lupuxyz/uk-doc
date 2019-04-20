@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Defines progress bars that indicate how far along a process is.</p>
 
-## Usage
+## 用法
 
 To apply this component, add the `.uk-progress` class to a `<progress>` element.
 

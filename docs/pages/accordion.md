@@ -1,15 +1,15 @@
-# Accordion
+# 手风琴
 
-<p class="uk-text-lead">Create a list of items that can be shown individually by clicking an item's header.</p>
+<p class="uk-text-lead">创建一个内容列表，可以通过点击标题单独地显示它的内容。</p>
 
-## Usage
+## 用法
 
-The Accordion component consists of a parent container with the `uk-accordion` attribute, and a title and content part for each accordion item.
+手风琴组件的组成部分包括：`uk-accordion` 属性定义的父容器，以及多个有标题和内容组成的手风琴条目。
 
 | Class                   | Description                                                                |
 |:------------------------|:---------------------------------------------------------------------------|
-| `.uk-accordion-title`   | Defines and styles the toggle for each accordion item. Use `<a>` elements. |
-| `.uk-accordion-content` | Defines the content part for each accordion item.                          |
+| `.uk-accordion-title`   | 定义手风琴条目的拨动器，并设置样式。使用 `<a>` 元素 |
+| `.uk-accordion-content` | 定义每条 手风琴条目的内容部分                           |
 
 ```html
 <ul uk-accordion>
@@ -45,9 +45,9 @@ The Accordion component consists of a parent container with the `uk-accordion` a
 
 ***
 
-## No collapsing
+## 无收缩 
 
-By default, all accordion items can be collapsed. To prevent this behavior and always maintain one open item, add the `collapsible: false` option to the attribute.
+默认情况下，所有手风琴条目都可以收缩起来。要始终保持其中一个是展开的，需要在 `uk-accordion` 属性上添加 `collapsible: false` 选项。
 
 ```html
 <ul uk-accordion="collapsible: false">...</ul>
@@ -78,9 +78,9 @@ By default, all accordion items can be collapsed. To prevent this behavior and a
 
 ***
 
-## Multiple open items
+## 同时展开多项
 
-To display multiple content sections at the same time without one collapsing when the other one is opened, add the `multiple: true` option to the `uk-accordion` attribute.
+实现同时展开多项，添加 `multiple: true` 选项到 `uk-accordion` 属性上。
 
 ```html
 <ul uk-accordion="multiple: true">...</ul>
@@ -111,11 +111,11 @@ To display multiple content sections at the same time without one collapsing whe
 
 ***
 
-## Set open items
+## 设置默认展开
 
-To specify which items should be opened initially, add the `.uk-open` class to the item. You can also use this to open multiple items. Just make sure to add the option `multiple: true` to the `uk-accordion` attribute.
+手动指定某些条目默认展开，给这些条目添加 `.uk-open` class 即可。同样可用于展开多个条目，首先你得确定已经把 `multiple: true` 选项添加到 `uk-accordion` 属性上了。
 
-**Note** Alternatively, you can open a single item by adding the `active: <index>` option to the `uk-accordion` attribute, e.g. `active: 1` to show the second element (the index is zero-based). Note that this will overwrite the `uk-open` class.
+**Note** 此外，你还可以通过在 `uk-accordion` 属性上添加 `active: <index>` 选项来展开某个条目，例如， `active: 1` 用来显示第二个，index 索引是从0开始的。注意，这操作会覆盖掉 `uk-open` class。
 
 ```html
 <ul uk-accordion>
@@ -150,50 +150,50 @@ To specify which items should be opened initially, add the `.uk-open` class to t
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 | Option        | Value   | Default | Description                                |
 |:--------------|:--------|:--------|:-------------------------------------------|
-| `active`      | Number  | `false` | Index of the element to open initially.    |
-| `animation`   | Boolean | `true`  | Reveal item directly or with a transition. |
-| `collapsible` | Boolean | `true`  | Allow all items to be closed.              |
-| `content`     | String  | `> .uk-accordion-content` | The content selector, which selects the accordion content elements. |
-| `duration`    | Number  | `200`   | Animation duration in milliseconds.        |
-| `multiple`    | Boolean | `false` | Allow multiple open items.                 |
-| `targets`     | String  | `> *`   | CSS selector of the element(s) to toggle.  |
-| `toggle`      | String  | `> .uk-accordion-title` | The toggle selector, which toggles accordion items. |
-| `transition`  | String  | `ease`  | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
+| `active`      | Number  | `false` | 手动展开的元素的索引值    |
+| `animation`   | Boolean | `true`  | 直接展开显示条目，或者带一个过渡动画  |
+| `collapsible` | Boolean | `true`  | 允许所有条目都可以关闭              |
+| `content`     | String  | `> .uk-accordion-content` | 条目内容选择器，用于指定条目的内容元素  |
+| `duration`    | Number  | `200`   | 以毫秒计时的动画持续时间。        |
+| `multiple`    | Boolean | `false` | 允许展开多个条目                 |
+| `targets`     | String  | `> *`   | 要拨动的元素的 CSS 选择器  |
+| `toggle`      | String  | `> .uk-accordion-title` | 拨动手风琴展开/收起的元素的选择器  |
+| `transition`  | String  | `ease`  | 显示条目时用到的过渡效果。使用 [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions) 中的关键词。 |
 
 ***
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.accordion(element, options);
 ```
 
-### Events
+### 事件
 
-The following events will be triggered on elements with this component attached:
+以下事件将在此组件相关元素上触发：
 
 | Name         | Description                                                              |
 |:-------------|:-------------------------------------------------------------------------|
-| `beforeshow` | Fires before an item is shown. Can prevent showing by returning `false`. |
-| `show`       | Fires after an item is shown.                                            |
-| `shown`      | Fires after the item's show animation has completed.                     |
-| `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide`       | Fires after an item's hide animation has started.                        |
-| `hidden`     | Fires after an item is hidden.                                           |
+| `beforeshow` | 在条目被显示前触发。可以通过返回 `false` 来阻止显示。 |
+| `show`       | 在条目被显示后触发。                                           |
+| `shown`      | 条目显示的动画完成后触发               |
+| `beforehide` | 在条目被隐藏前触发。可以通过返回 `false` 来阻止显示   |
+| `hide`       | 条目的隐藏动画开始后触发               |
+| `hidden`     | 在条目被隐藏后触发。                                           |
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### Toggle
 
@@ -201,9 +201,9 @@ The following methods are available for the component:
 UIkit.accordion(element).toggle(index, animate);
 ```
 
-Toggles the content pane.
+拨动内容条目显示。
 
 | Name      | Type                  | Default | Description                                  |
 |:----------|:----------------------|:--------|:---------------------------------------------|
-| `index`   | String, Integer, Node | 0       | Accordion pane to toggle. 0 based index.     |
-| `animate` | Boolean               | true    | Suppress opening animation by passing false. |
+| `index`   | String, Integer, Node | 0       | 要拨动手风琴条目索引值，从0开始。    |
+| `animate` | Boolean               | true    | 传入 false 可以关闭展开时的动画。  |

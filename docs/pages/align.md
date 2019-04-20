@@ -1,16 +1,16 @@
-# Align
+# 对齐
 
-<p class="uk-text-lead">Control the alignment of inline elements depending on the viewport size.</p>
+<p class="uk-text-lead">基于视口尺寸，控制行内元素的对齐。</p>
 
-## Usage
+## 用法
 
-To align images or other elements with spacing between the text and the element, add one of these classes.
+要使文本与图片或其他元素对齐，并带有一定的间距，需要添加下面这些 class中的一个：
 
 | Class              | Description                                                         |
 |:-------------------|:--------------------------------------------------------------------|
-| `.uk-align-left`   | Floats the element to the left and creates right and bottom margin. |
-| `.uk-align-right`  | Floats the element to the right and creates left and bottom margin. |
-| `.uk-align-center` | Centers the element and creates bottom margin.                      |
+| `.uk-align-left`   | 将元素浮动到左侧并创建右侧和底部的margin |
+| `.uk-align-right`  | 将元素浮动到右侧并创建左侧和底部的margin |
+| `.uk-align-center` | 居中元素，并创建底部margin                      |
 
 ```html
 <img class="uk-align-left" src="" alt="">
@@ -26,16 +26,16 @@ To align images or other elements with spacing between the text and the element,
 
 ***
 
-## Responsive
+## 响应式
 
-UIkit provides a number of responsive alignment classes. Basically, they work just like the usual alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
+UIkit 提供了一系列响应式对齐class。通常，它们与一般的对齐class效果一样，但是它们拥有的后缀表示它们会根据不同的断点产生效果。
 
 | Class                                        | Description                                        |
 |:---------------------------------------------|:---------------------------------------------------|
-| `.uk-align-left@s`<br> `.uk-align-right@s`   | Only affects device widths of _640px_ and higher.  |
-| `.uk-align-left@m`<br> `.uk-align-right@m`   | Only affects device widths of _960px_ and higher.  |
-| `.uk-align-left@l`<br> `.uk-align-right@l`   | Only affects device widths of _1200px_ and higher. |
-| `.uk-align-left@xl`<br> `.uk-align-right@xl` | Only affects device widths of _1600px_ and higher. |
+| `.uk-align-left@s`<br> `.uk-align-right@s`   | 仅作用于宽度在 _640px_ 以上的设备 |
+| `.uk-align-left@m`<br> `.uk-align-right@m`   | 仅作用于宽度在 _960px_ 以上的设备  |
+| `.uk-align-left@l`<br> `.uk-align-right@l`   | 仅作用于宽度在 _1200px_ 以上的设备 |
+| `.uk-align-left@xl`<br> `.uk-align-right@xl` | 仅作用于宽度在 _1600px_ 以上的设备 |
 
 ```html
 <img class="uk-align-center uk-align-right@m" src="" alt="">

@@ -4,7 +4,7 @@
 
 The Slider component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. It even accelerates to keep up with your pace when you click through previous and next navigation. All animations are hardware accelerated for a smoother performance.
 
-## Usage
+## 用法
 
 To apply this component, add the `uk-slider` attribute to a container element and create a list of slides with the `.uk-slider-items` class. Add an image or any other content to each item.
 
@@ -986,9 +986,9 @@ To toggle transitions on hover, use the `.uk-transition-toggle` class from the [
 
 ***
 
-## Component options
+## 组件选项
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+任意以下选项都能用于组件属性中。用分号隔开多个选项。[了解更多](javascript.md#component-configuration)
 
 ### Slider
 
@@ -1008,17 +1008,17 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ## JavaScript
 
-Learn more about [JavaScript components](javascript.md#programmatic-use).
+了解更多关于  [JavaScript 组件](javascript.md#programmatic-use).
 
-### Initialization
+### 初始化
 
 ```js
 UIkit.slider(element, options);
 ```
 
-### Events
+### 事件
 
-The following events will be triggered on elements with this component attached:
+以下事件将在此组件相关元素上触发：
 
 | Name             | Description                                               |
 |:-----------------|:----------------------------------------------------------|
@@ -1029,9 +1029,9 @@ The following events will be triggered on elements with this component attached:
 | `itemhide`       | Fires after an item's hide animation has started.         |
 | `itemhidden`     | Fires after an item's hide animation has completed.       |
 
-### Methods
+### 方法
 
-The following methods are available for the component:
+以下方法可用于此组件：
 
 #### Show
 
